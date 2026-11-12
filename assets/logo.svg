@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="MD Nexa">
+  <defs>
+    <linearGradient id="nx-left" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5ee0ff"/>
+      <stop offset="1" stop-color="#4c7cf5"/>
+    </linearGradient>
+    <linearGradient id="nx-right" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5b86ff"/>
+      <stop offset="1" stop-color="#a274ff"/>
+    </linearGradient>
+    <linearGradient id="nx-mid" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4aa8f0"/>
+      <stop offset="1" stop-color="#7c5bf6"/>
+    </linearGradient>
+  </defs>
+  <rect x="20" y="40" width="22" height="52" rx="11" fill="url(#nx-left)"/>
+  <rect x="78" y="26" width="22" height="66" rx="11" fill="url(#nx-right)"/>
+  <g transform="rotate(38 60 57)">
+    <rect x="43" y="37" width="34" height="21" rx="10.5" fill="url(#nx-mid)"/>
+  </g>
+</svg>
