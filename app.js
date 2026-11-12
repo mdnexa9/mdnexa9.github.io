@@ -16,6 +16,29 @@
   const html = document.documentElement;
   const LANG_KEY = "mdnexa-lang";
 
+  // Shown on the WhatsApp card in both languages: a number reads the same everywhere.
+  const WHATSAPP_DISPLAY = (() => {
+    const digits = String(CONTACT.whatsapp || "").replace(/\D/g, "");
+    if (!digits) return "";
+    const code = digits.slice(0, 2);
+    const rest = digits.slice(2);
+    const parts = [rest.slice(0, 3), rest.slice(3, 6), rest.slice(6)].filter(Boolean);
+    return "+" + code + (parts.length ? " " + parts.join(" ") : "");
+  })();
+
+  const CONTACT_LABELS = {
+    ar: {
+      whatsapp: "تواصل معنا على واتساب",
+      email: "أرسل لنا بريداً إلكترونياً",
+      play: "تصفّح منتجاتنا على Google Play",
+    },
+    en: {
+      whatsapp: "Message us on WhatsApp",
+      email: "Send us an email",
+      play: "Browse our products on Google Play",
+    },
+  };
+
   const TITLES = {
     ar: "MD Nexa — تطبيقات وألعاب أندرويد",
     en: "MD Nexa — Android apps & games",
@@ -40,6 +63,7 @@
     html.dir = isEn ? "ltr" : "rtl";
 
     translatable.forEach((el) => {
+      if (el.dataset.fixed) return;
       el.textContent = isEn ? el.dataset.en : el.dataset.ar;
     });
 
@@ -55,8 +79,40 @@
     }
     if (label) label.textContent = isEn ? "AR" : "EN";
 
+    localizeContactCards(isEn);
+
     if (persist) {
       try { localStorage.setItem(LANG_KEY, isEn ? "en" : "ar"); } catch (e) { /* private mode */ }
+    }
+  }
+
+  // Contact buttons: phone number stays legible in every language, and the
+  // screen-reader labels follow the page language.
+  function localizeContactCards(isEn) {
+    const labels = CONTACT_LABELS[isEn ? "en" : "ar"];
+
+    document.querySelectorAll(".contact-card").forEach((card) => {
+      const href = card.getAttribute("href") || "";
+      let key = null;
+      if (href.indexOf("wa.me") !== -1) key = "whatsapp";
+      else if (href.indexOf("mailto:") === 0) key = "email";
+      else if (href.indexOf("play.google.com") !== -1) key = "play";
+      if (key) {
+        card.setAttribute("aria-label", labels[key]);
+        card.setAttribute("title", labels[key]);
+      }
+    });
+  }
+
+  // Put the WhatsApp number on the card instead of a translated hint.
+  const whatsappDigits = String(CONTACT.whatsapp || "").replace(/\D/g, "");
+  const whatsappCard = document.querySelector('.contact-card[href*="wa.me"]');
+  if (whatsappCard && whatsappDigits) {
+    const line = whatsappCard.querySelector(".contact-text span");
+    if (line) {
+      line.dataset.fixed = "true";
+      line.setAttribute("dir", "ltr");
+      line.textContent = WHATSAPP_DISPLAY || "+" + whatsappDigits;
     }
   }
 
@@ -189,4 +245,7 @@
 
   const year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
+
+  // First paint defaults to Arabic, so make sure the labels match it.
+  if (html.lang !== "en") localizeContactCards(false);
 })();
