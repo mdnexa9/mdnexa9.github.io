@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=5">
+  <link rel="stylesheet" href="styles.css?v=6">
   <meta property="og:type" content="website">
   <meta property="og:title" content="MD Nexa — Apps. Games. One studio.">
   <meta property="og:description" content="Independent Android studio. Apps for everyday life, games for the fun in between.">
@@ -154,22 +154,25 @@
               </span>
             </button>
 
-            <button class="card card--soon" type="button" data-soon>
-              <span class="card-top">
-                <img class="card-icon" src="assets/game-corpses.svg" alt="" width="64" height="64" loading="lazy" decoding="async">
-                <span class="pill pill--soon" data-en="Soon">قريباً</span>
-              </span>
-              <span class="card-name">MD Corpses</span>
-              <span class="card-tagline" data-en="Next in the workshop">قيد التجهيز</span>
-              <span class="card-desc" data-en="A new project in the workshop. It will land on Google Play when it is ready to play.">مشروع جديد قيد التجهيز، وسيصل إلى Google Play أول ما يصبح جاهزاً للعب.</span>
-              <span class="card-meta">
+            <a class="card" href="https://play.google.com/store/apps/details?id=com.mdnexa.corpses" target="_blank" rel="noopener">
+              <div class="card-top">
+                <img class="card-icon" src="assets/md-corpses.jpg" alt="MD Corpses" width="64" height="64" loading="lazy" decoding="async">
+                <span class="pill" data-en="On Google Play">على Google Play</span>
+              </div>
+              <h3 class="card-name">MD Corpses</h3>
+              <p class="card-tagline" data-en="Drag. Die. Rise.">اسحب. مُت. انهض.</p>
+              <p class="card-desc" data-en="You wake at the bottom of a well with no memory of falling. Every jump counts, and every death leaves a body where you fell — your failures become the steps of a bridge to the surface.">تستيقظ في قاع بئر دون أن تتذكر سقوطك. كل قفزة مهمة، وكل موت يخلّف جثة تبقى حيث سقطت؛ إخفاقاتك تصبح درجات جسر إلى السطح.</p>
+              <div class="card-meta">
                 <span class="meta">Android</span>
                 <span class="meta">Google Play</span>
-              </span>
-              <span class="card-foot">
-                <span class="card-cta"><span data-en="Coming soon on Play Store">قريباً في بلاي ستور</span></span>
-              </span>
-            </button>
+                <span class="meta" data-en="Free">مجاني</span>
+              </div>
+              <div class="card-foot">
+                <span class="card-cta"><span data-en="Open in Play Store">افتح في بلاي ستور</span>
+                  <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -258,6 +261,6 @@
     </div>
   </footer>
 
-  <script src="app.js?v=5"></script>
+  <script src="app.js?v=6"></script>
 </body>
 </html>
