@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MD Nexa — apps and games</title>
+    <link>https://mdnexa9.github.io/</link>
+    <description>An independent Android studio. MD Work for work records, MD Corpses for one-finger climbing.</description>
+    <language>ar</language>
+    <atom:link href="https://mdnexa9.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>MD Work — دفتر عملك البسيط</title>
+      <link>https://mdnexa9.github.io/md-work/</link>
+      <guid>https://mdnexa9.github.io/md-work/</guid>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+      <description>تطبيق مجاني لأندرويد لتسجيل أيام العمل والأرباح والمصاريف، مع تقارير يومية وشهرية. بدون حساب، والبيانات على جهازك.</description>
+    </item>
+    <item>
+      <title>MD Corpses — لعبة تسلّق بإصبع واحد</title>
+      <link>https://mdnexa9.github.io/md-corpses/</link>
+      <guid>https://mdnexa9.github.io/md-corpses/</guid>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+      <description>لعبة أندرويد مجانية: ١٢ فصلاً، ووضع لا نهائي، و٢١ لغة بينها العربية.</description>
+    </item>
+    <item>
+      <title>MD Nexa studio</title>
+      <link>https://mdnexa9.github.io/en/</link>
+      <guid>https://mdnexa9.github.io/en/</guid>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+      <description>MD Nexa is an independent Android studio building small, fast apps and games.</description>
+    </item>
+  </channel>
+</rss>
