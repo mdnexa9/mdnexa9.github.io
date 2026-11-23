@@ -9,13 +9,21 @@
 - MD Bolt Master: colour-sorting puzzle game, in development, not released yet.
 - MD Darkflow: game in development, not released yet.
 
-## Pages
+## Pages (Arabic)
 
-- [MD Nexa studio (Arabic)](https://mdnexa9.github.io/): the studio home page with product cards, real Google Play screenshots, studio notes and contact details.
-- [MD Nexa studio (English)](https://mdnexa9.github.io/en/): the same studio page in English.
+- [MD Nexa studio](https://mdnexa9.github.io/): home page with product cards, real Google Play screenshots, studio notes and contact details.
 - [MD Work page](https://mdnexa9.github.io/md-work/): what the app does, its features and store screenshots.
 - [MD Corpses page](https://mdnexa9.github.io/md-corpses/): how the game plays, its features and store screenshots.
-- [Pay calculation guide (Arabic)](https://mdnexa9.github.io/guide/): how a full day, half day, hourly rate and overtime are calculated, with worked numbers — useful for anyone using MD Work.
+- [Pay calculation guide](https://mdnexa9.github.io/guide/): how a full day, half day, hourly rate and overtime are calculated, with worked numbers — useful for anyone using MD Work.
+
+## Pages (English)
+
+- [MD Nexa studio, English](https://mdnexa9.github.io/en/): the studio page in English.
+- [MD Work, English](https://mdnexa9.github.io/en/md-work/): the app in English, with features and store screenshots.
+- [MD Corpses, English](https://mdnexa9.github.io/en/md-corpses/): the game in English, with how it plays and store screenshots.
+
+## Reference
+
 - [Full text for assistants](https://mdnexa9.github.io/llms-full.txt): every product fact and answer in one file.
 - [Sitemap](https://mdnexa9.github.io/sitemap.xml) · [Feed](https://mdnexa9.github.io/feed.xml)
 
