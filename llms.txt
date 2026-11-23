@@ -4,14 +4,17 @@
 
 ## Products
 
-- [MD Work](https://play.google.com/store/apps/details?id=app.mdwork.notebook): work notebook for Android. Tracks workdays, half-days and days off, earnings, expenses, plus daily and monthly reports, quick note, timer and checklist. Free, no account, records stored on the device.
-- [MD Corpses](https://play.google.com/store/apps/details?id=com.mdnexa.corpses): one-finger climbing game. 12 chapters, endless mode, 21 languages including Arabic. Free on Google Play.
+- [MD Work](https://mdnexa9.github.io/md-work/): work notebook for Android. Tracks workdays, half-days and days off, earnings, expenses, plus daily and monthly reports, quick note, timer and checklist. Free, no account, records stored on the device. Google Play: https://play.google.com/store/apps/details?id=app.mdwork.notebook
+- [MD Corpses](https://mdnexa9.github.io/md-corpses/): one-finger climbing game. 12 chapters, endless mode, 21 languages including Arabic. Free. Google Play: https://play.google.com/store/apps/details?id=com.mdnexa.corpses
 - MD Bolt Master: colour-sorting puzzle game, in development, not released yet.
 - MD Darkflow: game in development, not released yet.
 
-## Site
+## Pages
 
-- [MD Nexa studio page](https://mdnexa9.github.io/): product cards, real Google Play screenshots for MD Work and MD Corpses, studio notes and contact details.
+- [MD Nexa studio](https://mdnexa9.github.io/): the studio home page with product cards, real Google Play screenshots, studio notes and contact details.
+- [MD Work page](https://mdnexa9.github.io/md-work/): what the app does, its features and store screenshots.
+- [MD Corpses page](https://mdnexa9.github.io/md-corpses/): how the game plays, its features and store screenshots.
+- [Sitemap](https://mdnexa9.github.io/sitemap.xml)
 
 ## Contact
 
