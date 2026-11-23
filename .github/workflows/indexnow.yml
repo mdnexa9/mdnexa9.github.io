@@ -1,0 +1,46 @@
+name: IndexNow - إشعار محركات البحث
+
+# يعمل تلقائياً عند كل تحديث للموقع، وأسبوعياً كإجراء أمان، ويمكن تشغيله يدوياً من تبويب Actions.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "**/*.html"
+      - "sitemap.xml"
+      - "feed.xml"
+      - "robots.txt"
+      - "llms.txt"
+      - "llms-full.txt"
+      - "scripts/indexnow.sh"
+      - ".github/workflows/indexnow.yml"
+  schedule:
+    - cron: "17 5 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow
+  cancel-in-progress: true
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    env:
+      HOST: mdnexa9.github.io
+      INDEXNOW_KEY: a7f3c9d21b4e6f8a5c0d9e3b7f1a2c4d
+      SITEMAP: sitemap.xml
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: تحقق من ملف المفتاح
+        run: |
+          set -euo pipefail
+          test -f "$INDEXNOW_KEY.txt"
+          test "$(tr -d '\r\n' < "$INDEXNOW_KEY.txt")" = "$INDEXNOW_KEY"
+          echo "ملف المفتاح سليم: $INDEXNOW_KEY.txt"
+
+      - name: أرسل صفحات الموقع إلى محركات البحث
+        run: bash scripts/indexnow.sh
