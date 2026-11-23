@@ -131,6 +131,8 @@ ul { padding: 0; list-style: none; }
   display: inline-flex;
   gap: 0.42em;
   align-items: baseline;
+  /* keep MD NEXA reading left-to-right inside the Arabic (rtl) page */
+  direction: ltr;
 }
 .wm-light { font-weight: 400; color: #c8d3ea; }
 .wm-bold { font-weight: 700; }
@@ -451,6 +453,9 @@ ul { padding: 0; list-style: none; }
   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   gap: 18px;
 }
+
+/* A panel with a single product should not stretch a lone card across the row. */
+.cards:has(> :only-child) { grid-template-columns: minmax(0, 460px); }
 
 .panel.is-entering .card { animation: fadeUp 0.4s var(--ease) both; }
 .panel.is-entering .card:nth-child(2) { animation-delay: 0.05s; }
@@ -905,6 +910,7 @@ button.card:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px;
   .tabs { display: flex; width: 100%; }
   .tab { flex: 1; justify-content: center; padding-inline: 14px; }
   .hero-actions .btn { flex: 1 1 auto; }
+  .cards:has(> :only-child) { grid-template-columns: minmax(0, 1fr); }
   .shots {
     display: flex;
     gap: 10px;
