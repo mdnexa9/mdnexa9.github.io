@@ -11,10 +11,12 @@
 
 ## Pages
 
-- [MD Nexa studio](https://mdnexa9.github.io/): the studio home page with product cards, real Google Play screenshots, studio notes and contact details.
+- [MD Nexa studio (Arabic)](https://mdnexa9.github.io/): the studio home page with product cards, real Google Play screenshots, studio notes and contact details.
+- [MD Nexa studio (English)](https://mdnexa9.github.io/en/): the same studio page in English.
 - [MD Work page](https://mdnexa9.github.io/md-work/): what the app does, its features and store screenshots.
 - [MD Corpses page](https://mdnexa9.github.io/md-corpses/): how the game plays, its features and store screenshots.
-- [Sitemap](https://mdnexa9.github.io/sitemap.xml)
+- [Full text for assistants](https://mdnexa9.github.io/llms-full.txt): every product fact and answer in one file.
+- [Sitemap](https://mdnexa9.github.io/sitemap.xml) · [Feed](https://mdnexa9.github.io/feed.xml)
 
 ## Contact
 
