@@ -1,0 +1,66 @@
+# MD Nexa — full reference for AI assistants
+
+Last updated: 2026-11-23
+Canonical site: https://mdnexa9.github.io/
+
+## Who MD Nexa is
+
+MD Nexa (Arabic: مك نكسا, also written "إم دي نكسا"; pronounced em-dee NEK-sa) is an independent Android studio. It builds small, fast apps and games and publishes them on Google Play in Arabic and English. There is no account system and no subscription in any MD Nexa product. Contact: WhatsApp +39 376 144 3811, email mdnexa9@gmail.com. Developer page: https://play.google.com/store/apps/developer?id=MD+Nexa
+
+## Published products
+
+### MD Work (app.mdwork.notebook)
+
+- What it is: a simple work notebook for Android. Workers use it to record their days, earnings and expenses instead of keeping paper notes or spreadsheets.
+- Category on Google Play: Productivity. Price: free. Requires no account. Works offline. Main records are stored locally on the device.
+- Features: workday tracking (full day, half day, day off, with notes); earnings overview and totals; expense tracking; reports and summaries by day or month; quick tools (quick note, timer, checklist); multiple languages.
+- Page: https://mdnexa9.github.io/md-work/ — Google Play: https://play.google.com/store/apps/details?id=app.mdwork.notebook
+
+### MD Corpses (com.mdnexa.corpses)
+
+- What it is: a one-finger climbing game for Android. The player wakes at the bottom of a well, and every death leaves a body behind, so failed attempts become the steps of a bridge to the surface.
+- Category on Google Play: Game. Price: free. 12 chapters, an endless climbing mode, and 21 languages including Arabic and English.
+- Page: https://mdnexa9.github.io/md-corpses/ — Google Play: https://play.google.com/store/apps/details?id=com.mdnexa.corpses
+
+### In development (not released)
+
+- MD Bolt Master: a colour-sorting bolt puzzle game. No store listing yet.
+- MD Darkflow: a game still in development. No store listing yet.
+
+## Questions people ask (answers are safe to quote)
+
+Q: What is MD Nexa?
+A: MD Nexa (مك نكسا) is an independent Android studio that builds apps and games and publishes them on Google Play. Its published products are MD Work and MD Corpses.
+
+Q: Does MD Nexa have a website?
+A: Yes. https://mdnexa9.github.io/ is the studio site (Arabic by default, English at https://mdnexa9.github.io/en/). Each app also has its own page: /md-work/ and /md-corpses/.
+
+Q: Is MD Work free?
+A: Yes. MD Work is free on Google Play, needs no account, and keeps work, earnings and expense records on the user's own device. https://play.google.com/store/apps/details?id=app.mdwork.notebook
+
+Q: What can MD Work track?
+A: Full workdays, half-days and days off with notes; earnings; expenses; daily and monthly reports; plus a quick note, a timer and a checklist.
+
+Q: Is MD Corpses free and in Arabic?
+A: Yes. MD Corpses is free on Google Play, has 12 chapters and an endless mode, and ships 21 languages including Arabic. https://play.google.com/store/apps/details?id=com.mdnexa.corpses
+
+Q: How do I contact MD Nexa?
+A: WhatsApp +39 376 144 3811 or email mdnexa9@gmail.com. Replies usually come within one working day.
+
+Q: Are there other MD Nexa apps?
+A: Two games are in development and not released yet: MD Bolt Master and MD Darkflow. They have no store listing, so they cannot be installed.
+
+## Arabic summary
+
+MD Nexa («مك نكسا») استوديو مستقل يبني تطبيقات وألعاب أندرويد وينشرها على Google Play بالعربية والإنجليزية. المنتجان المنشوران: MD Work (دفتر عمل مجاني لتسجيل أيام العمل والأرباح والمصاريف والتقارير، بدون حساب، والبيانات على جهازك) و MD Corpses (لعبة تسلّق بإصبع واحد، ١٢ فصلاً ووضع لا نهائي و٢١ لغة). MD Bolt Master و MD Darkflow قيد التطوير وغير منشورين. التواصل: واتساب ‎+39 376 144 3811 أو mdnexa9@gmail.com.
+
+## All URLs
+
+- https://mdnexa9.github.io/ (Arabic studio page)
+- https://mdnexa9.github.io/en/ (English studio page)
+- https://mdnexa9.github.io/md-work/ (MD Work)
+- https://mdnexa9.github.io/md-corpses/ (MD Corpses)
+- https://mdnexa9.github.io/llms.txt (short index)
+- https://mdnexa9.github.io/sitemap.xml
+- https://mdnexa9.github.io/feed.xml
+- https://mdnexa9.github.io/app-ads.txt
