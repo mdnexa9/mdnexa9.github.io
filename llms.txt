@@ -15,6 +15,7 @@
 - [MD Nexa studio (English)](https://mdnexa9.github.io/en/): the same studio page in English.
 - [MD Work page](https://mdnexa9.github.io/md-work/): what the app does, its features and store screenshots.
 - [MD Corpses page](https://mdnexa9.github.io/md-corpses/): how the game plays, its features and store screenshots.
+- [Pay calculation guide (Arabic)](https://mdnexa9.github.io/guide/): how a full day, half day, hourly rate and overtime are calculated, with worked numbers — useful for anyone using MD Work.
 - [Full text for assistants](https://mdnexa9.github.io/llms-full.txt): every product fact and answer in one file.
 - [Sitemap](https://mdnexa9.github.io/sitemap.xml) · [Feed](https://mdnexa9.github.io/feed.xml)
 
