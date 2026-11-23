@@ -1,0 +1,20 @@
+# MD Nexa
+
+> MD Nexa (مك نكسا) is an independent Android studio. It builds small, fast apps and games and publishes them on Google Play in Arabic and English. No accounts, no subscriptions.
+
+## Products
+
+- [MD Work](https://play.google.com/store/apps/details?id=app.mdwork.notebook): work notebook for Android. Tracks workdays, half-days and days off, earnings, expenses, plus daily and monthly reports, quick note, timer and checklist. Free, no account, records stored on the device.
+- [MD Corpses](https://play.google.com/store/apps/details?id=com.mdnexa.corpses): one-finger climbing game. 12 chapters, endless mode, 21 languages including Arabic. Free on Google Play.
+- MD Bolt Master: colour-sorting puzzle game, in development, not released yet.
+- MD Darkflow: game in development, not released yet.
+
+## Site
+
+- [MD Nexa studio page](https://mdnexa9.github.io/): product cards, real Google Play screenshots for MD Work and MD Corpses, studio notes and contact details.
+
+## Contact
+
+- WhatsApp: +39 376 144 3811
+- Email: mdnexa9@gmail.com
+- Developer page: https://play.google.com/store/apps/developer?id=MD+Nexa
