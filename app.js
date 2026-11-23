@@ -40,12 +40,12 @@
   };
 
   const TITLES = {
-    ar: "MD Nexa — تطبيقات وألعاب أندرويد",
-    en: "MD Nexa — Android apps & games",
+    ar: "MD Nexa — تطبيقات وألعاب أندرويد | MD Work و MD Corpses",
+    en: "MD Nexa — Android apps & games | MD Work & MD Corpses",
   };
   const DESCRIPTIONS = {
-    ar: "MD Nexa استوديو مستقل يبني تطبيقات وألعاب أندرويد: MD Work، MD Bolt Master وغيرهما. تصفّح كل المنتجات وتواصل معنا.",
-    en: "MD Nexa is an independent Android studio building apps and games: MD Work, MD Bolt Master and more. Browse the catalogue and get in touch.",
+    ar: "MD Nexa (مك نكسا) استوديو أندرويد مستقل. حمّل MD Work لتنظيم أيام العمل والأرباح والمصاريف، والعب MD Corpses على Google Play. تطبيقات وألعاب بالعربية والإنجليزية.",
+    en: "MD Nexa is an independent Android studio. Get MD Work to track workdays, earnings and expenses, and play MD Corpses on Google Play. Apps and games in Arabic and English.",
   };
 
   /* ---------------- Language ---------------- */
