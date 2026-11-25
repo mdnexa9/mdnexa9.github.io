@@ -1,0 +1,46 @@
+name: Add Google tag
+on:
+  push:
+    paths:
+      - '.github/workflows/gtag.yml'
+permissions:
+  contents: write
+jobs:
+  add-tag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Insert Google tag after head in every HTML page
+        run: |
+          python3 - <<'PY'
+          import pathlib, re
+          SNIPPET = """  <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-T6RJDZLR"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+            </script>
+          """
+          changed = []
+          for p in sorted(pathlib.Path('.').rglob('*.html')):
+              if '.git' in p.parts:
+                  continue
+              s = p.read_text(encoding='utf-8')
+              if 'GTM-T6RJDZLR' in s:
+                  continue
+              m = re.search(r'<head[^>]*>', s, re.I)
+              if not m:
+                  continue
+              p.write_text(s[:m.end()] + SNIPPET + s[m.end():], encoding='utf-8')
+              changed.append(str(p))
+          print('changed:', changed)
+          PY
+      - name: Commit and push
+        run: |
+          git config user.name "MD Nexa"
+          git config user.email "mdnexa9@gmail.com"
+          git add -A
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "Add Google tag (GTM-T6RJDZLR) to all pages"
+          git push
