@@ -191,5 +191,23 @@
       <p class="copy" dir="ltr">© <span>2026</span> MD Nexa · mdnexa9.github.io</p>
     </div>
   </footer>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var t = e.target;
+    if (!t || !t.closest) return;
+    var a = t.closest('a[href*="play.google.com"]');
+    if (!a) return;
+    var m = a.href.match(/id=([A-Za-z0-9_.]+)/);
+    if (typeof gtag === 'function') {
+      gtag('event', 'play_click', {
+        link_url: a.href,
+        app_id: m ? m[1] : '',
+        page_path: location.pathname
+      });
+    }
+  }, true);
+})();
+</script>
 </body>
 </html>
