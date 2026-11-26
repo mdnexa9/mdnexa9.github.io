@@ -1,0 +1,64 @@
+{
+  "note": "Single source of truth for sitemap.xml. Add one group per piece of content; every language in `alternates` becomes its own <url> entry with the full hreflang set. Run tools/build_sitemap.py after editing.",
+  "base": "https://mdnexa9.github.io",
+  "x_default": "ar",
+  "groups": [
+    {
+      "key": "home",
+      "lastmod": "2026-11-23",
+      "changefreq": "weekly",
+      "priority": { "ar": "1.0", "en": "0.9" },
+      "alternates": { "ar": "/", "en": "/en/" }
+    },
+    {
+      "key": "md-work",
+      "lastmod": "2026-11-23",
+      "changefreq": "monthly",
+      "priority": { "ar": "0.9", "en": "0.8" },
+      "alternates": { "ar": "/md-work/", "en": "/en/md-work/" }
+    },
+    {
+      "key": "md-corpses",
+      "lastmod": "2026-11-23",
+      "changefreq": "monthly",
+      "priority": { "ar": "0.9", "en": "0.8" },
+      "alternates": { "ar": "/md-corpses/", "en": "/en/md-corpses/" }
+    },
+    {
+      "key": "pay-guide",
+      "lastmod": "2026-11-26",
+      "changefreq": "monthly",
+      "priority": { "ar": "0.8", "en": "0.8", "it": "0.8" },
+      "alternates": { "ar": "/guide/", "en": "/en/guide/", "it": "/it/" }
+    },
+    {
+      "key": "unpaid-hours",
+      "lastmod": "2026-11-26",
+      "changefreq": "monthly",
+      "priority": { "it": "0.7" },
+      "alternates": { "it": "/it/ore-non-pagate/" }
+    },
+    {
+      "key": "work-hours",
+      "lastmod": "2026-11-26",
+      "changefreq": "monthly",
+      "priority": { "ar": "0.9", "en": "0.8", "it": "0.8" },
+      "alternates": {
+        "ar": "/work-hours/",
+        "en": "/en/work-hours/",
+        "it": "/it/registro-ore-lavorate/"
+      }
+    },
+    {
+      "key": "articles-hub",
+      "lastmod": "2026-11-26",
+      "changefreq": "weekly",
+      "priority": { "ar": "0.8", "en": "0.7", "it": "0.7" },
+      "alternates": {
+        "ar": "/articles/",
+        "en": "/en/articles/",
+        "it": "/it/articoli/"
+      }
+    }
+  ]
+}
