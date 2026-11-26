@@ -29,3 +29,4 @@ User-agent: CCBot
 Allow: /
 
 Sitemap: https://mdnexa9.github.io/sitemap.xml
+Sitemap: https://mdnexa9.github.io/Ta7mil11/sitemap.xml
