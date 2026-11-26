@@ -76,4 +76,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mdnexa9.github.io/en/guide/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mdnexa9.github.io/en/guide/"/>
   </url>
+  <url>
+    <loc>https://mdnexa9.github.io/it/ore-non-pagate/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mdnexa9.github.io/it/ore-non-pagate/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdnexa9.github.io/it/ore-non-pagate/"/>
+  </url>
 </urlset>
