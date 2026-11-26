@@ -29,4 +29,3 @@ User-agent: CCBot
 Allow: /
 
 Sitemap: https://mdnexa.online/sitemap.xml
-Sitemap: https://mdnexa.online/Ta7mil11/sitemap.xml

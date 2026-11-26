@@ -59,6 +59,34 @@
         "en": "/en/articles/",
         "it": "/it/articoli/"
       }
+    },
+    {
+      "key": "work-hours-tracker",
+      "lastmod": "2026-11-26",
+      "changefreq": "monthly",
+      "priority": { "en": "0.7" },
+      "alternates": { "en": "/en/work-hours-tracker/" }
+    },
+    {
+      "key": "hourly-wage-calculator",
+      "lastmod": "2026-11-26",
+      "changefreq": "monthly",
+      "priority": { "en": "0.7" },
+      "alternates": { "en": "/en/hourly-wage-calculator/" }
+    },
+    {
+      "key": "unpaid-wages",
+      "lastmod": "2026-11-26",
+      "changefreq": "monthly",
+      "priority": { "en": "0.7" },
+      "alternates": { "en": "/en/unpaid-wages/" }
+    },
+    {
+      "key": "work-time-record",
+      "lastmod": "2026-11-26",
+      "changefreq": "monthly",
+      "priority": { "en": "0.7" },
+      "alternates": { "en": "/en/work-time-record/" }
     }
   ]
 }

@@ -152,4 +152,36 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://mdnexa.online/it/articoli/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mdnexa.online/articles/"/>
   </url>
+  <url>
+    <loc>https://mdnexa.online/en/work-hours-tracker/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mdnexa.online/en/work-hours-tracker/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdnexa.online/en/work-hours-tracker/"/>
+  </url>
+  <url>
+    <loc>https://mdnexa.online/en/hourly-wage-calculator/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mdnexa.online/en/hourly-wage-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdnexa.online/en/hourly-wage-calculator/"/>
+  </url>
+  <url>
+    <loc>https://mdnexa.online/en/unpaid-wages/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mdnexa.online/en/unpaid-wages/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdnexa.online/en/unpaid-wages/"/>
+  </url>
+  <url>
+    <loc>https://mdnexa.online/en/work-time-record/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mdnexa.online/en/work-time-record/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdnexa.online/en/work-time-record/"/>
+  </url>
 </urlset>
