@@ -1,6 +1,6 @@
 # MD Nexa
 
-Source of the MD Nexa studio site, published with GitHub Pages at https://mdnexa9.github.io/ .
+Source of the MD Nexa studio site, published with GitHub Pages at https://mdnexa.online/ .
 
 The site lists the studio's Android apps and games, has a contact section (WhatsApp and email), and serves `app-ads.txt` from the domain root for AdMob verification.
 

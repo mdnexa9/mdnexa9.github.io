@@ -28,7 +28,7 @@ jobs:
   submit:
     runs-on: ubuntu-latest
     env:
-      HOST: mdnexa9.github.io
+      HOST: mdnexa.online
       INDEXNOW_KEY: a7f3c9d21b4e6f8a5c0d9e3b7f1a2c4d
       SITEMAP: sitemap.xml
     steps:

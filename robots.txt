@@ -1,4 +1,4 @@
-# MD Nexa — https://mdnexa9.github.io/
+# MD Nexa — https://mdnexa.online/
 
 User-agent: *
 Allow: /
@@ -28,5 +28,5 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://mdnexa9.github.io/sitemap.xml
-Sitemap: https://mdnexa9.github.io/Ta7mil11/sitemap.xml
+Sitemap: https://mdnexa.online/sitemap.xml
+Sitemap: https://mdnexa.online/Ta7mil11/sitemap.xml

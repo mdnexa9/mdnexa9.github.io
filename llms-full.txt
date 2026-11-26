@@ -1,7 +1,7 @@
 # MD Nexa — full reference for AI assistants
 
 Last updated: 2026-11-23
-Canonical site: https://mdnexa9.github.io/
+Canonical site: https://mdnexa.online/
 
 ## Who MD Nexa is
 
@@ -14,13 +14,13 @@ MD Nexa (Arabic: مك نكسا, also written "إم دي نكسا"; pronounced em
 - What it is: a simple work notebook for Android. Workers use it to record their days, earnings and expenses instead of keeping paper notes or spreadsheets.
 - Category on Google Play: Productivity. Price: free. Requires no account. Works offline. Main records are stored locally on the device.
 - Features: workday tracking (full day, half day, day off, with notes); earnings overview and totals; expense tracking; reports and summaries by day or month; quick tools (quick note, timer, checklist); multiple languages.
-- Page: https://mdnexa9.github.io/md-work/ — Google Play: https://play.google.com/store/apps/details?id=app.mdwork.notebook
+- Page: https://mdnexa.online/md-work/ — Google Play: https://play.google.com/store/apps/details?id=app.mdwork.notebook
 
 ### MD Corpses (com.mdnexa.corpses)
 
 - What it is: a one-finger climbing game for Android. The player wakes at the bottom of a well, and every death leaves a body behind, so failed attempts become the steps of a bridge to the surface.
 - Category on Google Play: Game. Price: free. 12 chapters, an endless climbing mode, and 21 languages including Arabic and English.
-- Page: https://mdnexa9.github.io/md-corpses/ — Google Play: https://play.google.com/store/apps/details?id=com.mdnexa.corpses
+- Page: https://mdnexa.online/md-corpses/ — Google Play: https://play.google.com/store/apps/details?id=com.mdnexa.corpses
 
 ### In development (not released)
 
@@ -33,7 +33,7 @@ Q: What is MD Nexa?
 A: MD Nexa (مك نكسا) is an independent Android studio that builds apps and games and publishes them on Google Play. Its published products are MD Work and MD Corpses.
 
 Q: Does MD Nexa have a website?
-A: Yes. https://mdnexa9.github.io/ is the studio site (Arabic by default, English at https://mdnexa9.github.io/en/). Each app also has its own page: /md-work/ and /md-corpses/.
+A: Yes. https://mdnexa.online/ is the studio site (Arabic by default, English at https://mdnexa.online/en/). Each app also has its own page: /md-work/ and /md-corpses/.
 
 Q: Is MD Work free?
 A: Yes. MD Work is free on Google Play, needs no account, and keeps work, earnings and expense records on the user's own device. https://play.google.com/store/apps/details?id=app.mdwork.notebook
@@ -56,11 +56,11 @@ MD Nexa («مك نكسا») استوديو مستقل يبني تطبيقات و
 
 ## All URLs
 
-- https://mdnexa9.github.io/ (Arabic studio page)
-- https://mdnexa9.github.io/en/ (English studio page)
-- https://mdnexa9.github.io/md-work/ (MD Work)
-- https://mdnexa9.github.io/md-corpses/ (MD Corpses)
-- https://mdnexa9.github.io/llms.txt (short index)
-- https://mdnexa9.github.io/sitemap.xml
-- https://mdnexa9.github.io/feed.xml
-- https://mdnexa9.github.io/app-ads.txt
+- https://mdnexa.online/ (Arabic studio page)
+- https://mdnexa.online/en/ (English studio page)
+- https://mdnexa.online/md-work/ (MD Work)
+- https://mdnexa.online/md-corpses/ (MD Corpses)
+- https://mdnexa.online/llms.txt (short index)
+- https://mdnexa.online/sitemap.xml
+- https://mdnexa.online/feed.xml
+- https://mdnexa.online/app-ads.txt

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # يرسل كل روابط الـ sitemap إلى IndexNow (Bing, Yandex, Naver, Seznam, Yep).
 # يعمل تلقائياً من GitHub Actions عند كل تحديث للموقع، ويمكن تشغيله يدوياً:
-#   HOST=mdnexa9.github.io INDEXNOW_KEY=xxxxxxxx SITEMAP=sitemap.xml ./scripts/indexnow.sh
+#   HOST=mdnexa.online INDEXNOW_KEY=xxxxxxxx SITEMAP=sitemap.xml ./scripts/indexnow.sh
 set -euo pipefail
 
 : "${HOST:?HOST مطلوب}"

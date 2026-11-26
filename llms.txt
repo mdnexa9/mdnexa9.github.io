@@ -4,28 +4,28 @@
 
 ## Products
 
-- [MD Work](https://mdnexa9.github.io/md-work/): work notebook for Android. Tracks workdays, half-days and days off, earnings, expenses, plus daily and monthly reports, quick note, timer and checklist. Free, no account, records stored on the device. Google Play: https://play.google.com/store/apps/details?id=app.mdwork.notebook
-- [MD Corpses](https://mdnexa9.github.io/md-corpses/): one-finger climbing game. 12 chapters, endless mode, 21 languages including Arabic. Free. Google Play: https://play.google.com/store/apps/details?id=com.mdnexa.corpses
+- [MD Work](https://mdnexa.online/md-work/): work notebook for Android. Tracks workdays, half-days and days off, earnings, expenses, plus daily and monthly reports, quick note, timer and checklist. Free, no account, records stored on the device. Google Play: https://play.google.com/store/apps/details?id=app.mdwork.notebook
+- [MD Corpses](https://mdnexa.online/md-corpses/): one-finger climbing game. 12 chapters, endless mode, 21 languages including Arabic. Free. Google Play: https://play.google.com/store/apps/details?id=com.mdnexa.corpses
 - MD Bolt Master: colour-sorting puzzle game, in development, not released yet.
 - MD Darkflow: game in development, not released yet.
 
 ## Pages (Arabic)
 
-- [MD Nexa studio](https://mdnexa9.github.io/): home page with product cards, real Google Play screenshots, studio notes and contact details.
-- [MD Work page](https://mdnexa9.github.io/md-work/): what the app does, its features and store screenshots.
-- [MD Corpses page](https://mdnexa9.github.io/md-corpses/): how the game plays, its features and store screenshots.
-- [Pay calculation guide](https://mdnexa9.github.io/guide/): how a full day, half day, hourly rate and overtime are calculated, with worked numbers — useful for anyone using MD Work.
+- [MD Nexa studio](https://mdnexa.online/): home page with product cards, real Google Play screenshots, studio notes and contact details.
+- [MD Work page](https://mdnexa.online/md-work/): what the app does, its features and store screenshots.
+- [MD Corpses page](https://mdnexa.online/md-corpses/): how the game plays, its features and store screenshots.
+- [Pay calculation guide](https://mdnexa.online/guide/): how a full day, half day, hourly rate and overtime are calculated, with worked numbers — useful for anyone using MD Work.
 
 ## Pages (English)
 
-- [MD Nexa studio, English](https://mdnexa9.github.io/en/): the studio page in English.
-- [MD Work, English](https://mdnexa9.github.io/en/md-work/): the app in English, with features and store screenshots.
-- [MD Corpses, English](https://mdnexa9.github.io/en/md-corpses/): the game in English, with how it plays and store screenshots.
+- [MD Nexa studio, English](https://mdnexa.online/en/): the studio page in English.
+- [MD Work, English](https://mdnexa.online/en/md-work/): the app in English, with features and store screenshots.
+- [MD Corpses, English](https://mdnexa.online/en/md-corpses/): the game in English, with how it plays and store screenshots.
 
 ## Reference
 
-- [Full text for assistants](https://mdnexa9.github.io/llms-full.txt): every product fact and answer in one file.
-- [Sitemap](https://mdnexa9.github.io/sitemap.xml) · [Feed](https://mdnexa9.github.io/feed.xml)
+- [Full text for assistants](https://mdnexa.online/llms-full.txt): every product fact and answer in one file.
+- [Sitemap](https://mdnexa.online/sitemap.xml) · [Feed](https://mdnexa.online/feed.xml)
 
 ## Contact
 

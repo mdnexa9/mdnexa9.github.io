@@ -1,6 +1,6 @@
 {
   "note": "Single source of truth for sitemap.xml. Add one group per piece of content; every language in `alternates` becomes its own <url> entry with the full hreflang set. Run tools/build_sitemap.py after editing.",
-  "base": "https://mdnexa9.github.io",
+  "base": "https://mdnexa.online",
   "x_default": "ar",
   "groups": [
     {
