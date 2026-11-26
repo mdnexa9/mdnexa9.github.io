@@ -56,25 +56,33 @@
   </url>
   <url>
     <loc>https://mdnexa9.github.io/guide/</loc>
-    <lastmod>2026-11-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mdnexa9.github.io/it/</loc>
     <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mdnexa9.github.io/guide/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mdnexa9.github.io/en/guide/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://mdnexa9.github.io/it/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdnexa9.github.io/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdnexa9.github.io/guide/"/>
   </url>
   <url>
     <loc>https://mdnexa9.github.io/en/guide/</loc>
     <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mdnexa9.github.io/guide/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mdnexa9.github.io/en/guide/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdnexa9.github.io/en/guide/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mdnexa9.github.io/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdnexa9.github.io/guide/"/>
+  </url>
+  <url>
+    <loc>https://mdnexa9.github.io/it/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mdnexa9.github.io/guide/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mdnexa9.github.io/en/guide/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mdnexa9.github.io/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdnexa9.github.io/guide/"/>
   </url>
   <url>
     <loc>https://mdnexa9.github.io/it/ore-non-pagate/</loc>
@@ -113,5 +121,35 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mdnexa9.github.io/en/work-hours/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://mdnexa9.github.io/it/registro-ore-lavorate/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mdnexa9.github.io/work-hours/"/>
+  </url>
+  <url>
+    <loc>https://mdnexa9.github.io/articles/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mdnexa9.github.io/articles/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mdnexa9.github.io/en/articles/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mdnexa9.github.io/it/articoli/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdnexa9.github.io/articles/"/>
+  </url>
+  <url>
+    <loc>https://mdnexa9.github.io/en/articles/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mdnexa9.github.io/articles/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mdnexa9.github.io/en/articles/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mdnexa9.github.io/it/articoli/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdnexa9.github.io/articles/"/>
+  </url>
+  <url>
+    <loc>https://mdnexa9.github.io/it/articoli/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mdnexa9.github.io/articles/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mdnexa9.github.io/en/articles/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mdnexa9.github.io/it/articoli/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdnexa9.github.io/articles/"/>
   </url>
 </urlset>
