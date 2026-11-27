@@ -36,19 +36,17 @@
     position: absolute;
     inset: 0;
     z-index: -2;
-    opacity: 0.6;
+    opacity: 0.42;
     background-image:
-      linear-gradient(rgba(148, 163, 184, 0.075) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(148, 163, 184, 0.075) 1px, transparent 1px);
+      linear-gradient(rgba(148, 163, 184, 0.09) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(148, 163, 184, 0.09) 1px, transparent 1px);
     background-size: 64px 64px;
-    -webkit-mask-image: radial-gradient(78% 78% at 42% 42%, #000 26%, transparent 86%);
-            mask-image: radial-gradient(78% 78% at 42% 42%, #000 26%, transparent 86%);
   }
 
   .frame {
     position: absolute;
     inset: 20px;
-    z-index: 3;
+    z-index: 1;
     border: 1px solid rgba(162, 182, 224, 0.16);
     border-radius: 28px;
     pointer-events: none;
@@ -115,7 +113,7 @@
 
   h1 {
     margin: 0;
-    font-size: 88px;
+    font-size: 90px;
     line-height: 1.04;
     letter-spacing: -0.035em;
     font-weight: 700;
@@ -135,6 +133,7 @@
     line-height: 1.6;
     color: #a9b7d2;
     direction: rtl;
+    text-align: left;
     unicode-bidi: isolate;
     max-width: 720px;
   }
@@ -171,11 +170,11 @@
 
   .seal {
     position: absolute;
-    right: -96px;
-    top: 118px;
-    width: 430px;
-    height: 430px;
-    border-radius: 108px;
+    right: -70px;
+    top: 98px;
+    width: 352px;
+    height: 352px;
+    border-radius: 88px;
     transform: rotate(-9deg);
     background:
       linear-gradient(150deg, rgba(94, 224, 255, 0.14), rgba(126, 94, 255, 0.18) 58%, rgba(10, 14, 26, 0.9));
@@ -191,18 +190,18 @@
   .seal::before {
     content: "";
     position: absolute;
-    inset: 26px;
-    border-radius: 84px;
+    inset: 22px;
+    border-radius: 68px;
     border: 1px solid rgba(162, 182, 224, 0.16);
   }
-  .seal img { width: 210px; height: 210px; display: block; margin-left: -46px; }
+  .seal img { width: 178px; height: 178px; display: block; margin-left: -38px; }
 
   .glow {
     position: absolute;
-    right: -60px;
-    top: 90px;
-    width: 520px;
-    height: 520px;
+    right: -46px;
+    top: 72px;
+    width: 450px;
+    height: 450px;
     z-index: 0;
     border-radius: 50%;
     background: radial-gradient(circle, rgba(126, 94, 255, 0.42), rgba(53, 208, 245, 0.16) 46%, transparent 68%);
