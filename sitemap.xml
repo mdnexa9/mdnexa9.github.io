@@ -217,6 +217,38 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mdnexa.online/hisab-saat-al-amal/"/>
   </url>
   <url>
+    <loc>https://mdnexa.online/ajr-al-sa-a/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mdnexa.online/ajr-al-sa-a/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdnexa.online/ajr-al-sa-a/"/>
+  </url>
+  <url>
+    <loc>https://mdnexa.online/saat-al-amal-fi-al-shahr/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mdnexa.online/saat-al-amal-fi-al-shahr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdnexa.online/saat-al-amal-fi-al-shahr/"/>
+  </url>
+  <url>
+    <loc>https://mdnexa.online/saat-idafiya/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mdnexa.online/saat-idafiya/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdnexa.online/saat-idafiya/"/>
+  </url>
+  <url>
+    <loc>https://mdnexa.online/ajr-mutaakhkhir/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mdnexa.online/ajr-mutaakhkhir/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdnexa.online/ajr-mutaakhkhir/"/>
+  </url>
+  <url>
     <loc>https://mdnexa.online/services/</loc>
     <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>

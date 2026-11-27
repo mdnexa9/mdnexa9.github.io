@@ -32,6 +32,10 @@
 ## Articles
 
 - [حساب ساعات العمل](https://mdnexa.online/hisab-saat-al-amal/) (Arabic): converting clock-in and clock-out times into paid hours, with the break deducted, minutes as decimals, weekly totals and overtime.
+- [أجر الساعة من الراتب الشهري](https://mdnexa.online/ajr-al-sa-a/) (Arabic): monthly salary to hourly rate, the four divisors in use (208, 174, 176, 240) and why the divisor changes the rate by up to 20%.
+- [كم ساعة عمل في الشهر](https://mdnexa.online/saat-al-amal-fi-al-shahr/) (Arabic): where 208, 174, 176 and 240 come from, and how to count a real month's hours.
+- [حساب الساعات الإضافية](https://mdnexa.online/saat-idafiya/) (Arabic): overtime = hours over the normal week × hourly rate × multiplier, with a worked week and the common multipliers.
+- [تأخر الراتب](https://mdnexa.online/ajr-mutaakhkhir/) (Arabic): evidence to keep, a first written message, a claim template, internal escalation and the labour authority step.
 - [Work hours tracker](https://mdnexa.online/en/work-hours-tracker/): the fields a tracker needs and the one-minute daily routine.
 - [Hourly wage calculator](https://mdnexa.online/en/hourly-wage-calculator/): formulas and worked examples for hours × rate.
 - [Overtime pay calculator](https://mdnexa.online/en/overtime-pay-calculator/): base rate, multiplier and hours, with time-and-a-half examples.
