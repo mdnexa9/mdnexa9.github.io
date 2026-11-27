@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MD Nexa — استوديو أندرويد مستقل</title>
-<meta name="description" content="MD Nexa استوديو مستقل يبني تطبيقات وألعاب أندرويد صغيرة ومركّزة: MD Work لأيام العمل والأرباح، وMD Corpses لعبة تسلّق بإصبع واحد. مجانية، بلا حساب، تعمل بدون إنترنت، وبـ١٤ لغة.">
+<title>MD Nexa — ألعاب ألغاز أندرويد: MD Bolt Master و MD Darkflow</title>
+<meta name="description" content="لعبتان مجانيتان من MD Nexa: MD Bolt Master لفرز الصواميل الملوّنة، وMD Darkflow لمسح الأسهم المضيئة. تعمل بدون إنترنت، ١٤ لغة، بلا حساب.">
 <link rel="canonical" href="https://mdnexa.online/ar/">
 <link rel="alternate" hreflang="en" href="https://mdnexa.online/">
 <link rel="alternate" hreflang="ar" href="https://mdnexa.online/ar/">
@@ -20,8 +20,8 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="MD Nexa">
 <meta property="og:url" content="https://mdnexa.online/ar/">
-<meta property="og:title" content="MD Nexa — استوديو أندرويد مستقل">
-<meta property="og:description" content="تطبيقات وألعاب صغيرة ومركّزة. مجانية، بلا حساب، تعمل بدون إنترنت.">
+<meta property="og:title" content="MD Nexa — ألعاب ألغاز أندرويد">
+<meta property="og:description" content="MD Bolt Master وMD Darkflow: مجانية، بدون إنترنت، ١٤ لغة، وبلا حساب.">
 <meta property="og:locale" content="ar_AR">
 <meta property="og:locale:alternate" content="en_US">
 <meta property="og:image" content="https://mdnexa.online/assets/og-image.jpg">
@@ -40,7 +40,7 @@
       "url": "https://mdnexa.online/",
       "logo": "https://mdnexa.online/assets/logo.svg",
       "email": "mdnexa9@gmail.com",
-      "description": "استوديو أندرويد مستقل يبني تطبيقات وألعاباً صغيرة تعمل بدون إنترنت ولا تحتاج حساباً.",
+      "description": "استوديو أندرويد مستقل يبني ألعاب ألغاز صغيرة وتطبيقات مركّزة.",
       "sameAs": [
         "https://www.facebook.com/p/MD-Nexa-61596090351733",
         "https://www.tiktok.com/@mdnexa.studio",
@@ -59,10 +59,10 @@
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "هل تطبيقات MD Nexa مجانية؟", "acceptedAnswer": { "@type": "Answer", "text": "نعم، كل تطبيق ولعبة مجانية على Google Play بدون اشتراك وبدون حساب." } },
-        { "@type": "Question", "name": "ما الذي يحدث لبياناتي؟", "acceptedAnswer": { "@type": "Answer", "text": "تبقى على جهازك. MD Work يحفظ أيام العمل والأرباح محلياً، ولا نحتفظ بنسخة على خادم." } },
-        { "@type": "Question", "name": "هل تعمل بدون إنترنت؟", "acceptedAnswer": { "@type": "Answer", "text": "نعم، MD Work وMD Corpses تعملان بدون اتصال، وفي الألعاب الأحدث يحتاج التحدي اليومي فقط اتصالاً قصيراً." } },
-        { "@type": "Question", "name": "كم لغة تدعم التطبيقات؟", "acceptedAnswer": { "@type": "Answer", "text": "أربع عشرة لغة: العربية والإنجليزية والفرنسية والإسبانية والألمانية واليابانية والصينية والكورية والروسية والتركية والإيطالية والبرتغالية والهندية والإندونيسية، مكتوبة يدوياً لا بترجمة آلية." } }
+        { "@type": "Question", "name": "هل الألعاب مجانية؟", "acceptedAnswer": { "@type": "Answer", "text": "نعم، MD Bolt Master وMD Darkflow مجانيتان على Google Play، بلا اشتراك وبلا حساب." } },
+        { "@type": "Question", "name": "هل تعمل بدون إنترنت؟", "acceptedAnswer": { "@type": "Answer", "text": "نعم، كل المستويات تعمل بلا اتصال، والتحدي اليومي الاختياري فقط يحتاج اتصالاً قصيراً لتحميل لوحة اليوم." } },
+        { "@type": "Question", "name": "هل يوجد مؤقت أو طاقة؟", "acceptedAnswer": { "@type": "Answer", "text": "لا مؤقت ولا طاقة ولا ميزة تنتهي. يمكنك ترك اللوحة والعودة إليها متى شئت." } },
+        { "@type": "Question", "name": "كم لغة تدعم الألعاب؟", "acceptedAnswer": { "@type": "Answer", "text": "أربع عشرة لغة مكتوبة يدوياً: العربية والإنجليزية والفرنسية والإسبانية والألمانية واليابانية والصينية والكورية والروسية والتركية والإيطالية والبرتغالية والهندية والإندونيسية." } }
       ]
     }
   ]
@@ -72,33 +72,30 @@
 :root{--bg:#05060c;--panel:#0b0e18;--ink:#f2f5fb;--mut:#98a2b3;--line:rgba(255,255,255,.09);--acc:#5ee0ff;--acc2:#7c5bf6;--radius:20px}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;color:var(--ink);font:16px/1.75 "Cairo",system-ui,-apple-system,"Segoe UI",sans-serif;
-  background:radial-gradient(110% 70% at 15% -15%,rgba(110,168,255,.18),transparent 60%),radial-gradient(80% 55% at 95% -5%,rgba(160,114,255,.14),transparent 55%),var(--bg);
-  -webkit-font-smoothing:antialiased}
+body{margin:0;color:var(--ink);font:16px/1.75 "Cairo",system-ui,-apple-system,"Segoe UI",sans-serif;background:radial-gradient(110% 70% at 15% -15%,rgba(110,168,255,.18),transparent 60%),radial-gradient(80% 55% at 95% -5%,rgba(160,114,255,.14),transparent 55%),var(--bg);-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}a{color:inherit}
 .wrap{width:min(1120px,92vw);margin-inline:auto}
 header{position:sticky;top:0;z-index:60;background:rgba(5,6,12,.78);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
 .head{display:flex;align-items:center;gap:14px;height:72px}
 .brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;flex:0 0 auto}
-.brand svg{width:32px;height:32px;display:block}
-.wm{font-size:13.5px;font-weight:600;letter-spacing:.16em;white-space:nowrap}
-.wm b{font-weight:700}
+.brand svg{width:34px;height:34px;display:block;border-radius:9px}
+.wm{font-size:13.5px;font-weight:700;letter-spacing:.16em;white-space:nowrap}
 nav.main{margin-inline-start:auto;display:flex;align-items:center;gap:24px;font-size:15px}
 nav.main a{color:var(--mut);text-decoration:none;padding:6px 0;border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
 nav.main a:hover{color:var(--ink);border-color:var(--line)}
 .head-actions{display:flex;align-items:center;gap:10px}
 .lang{font-size:13px;color:var(--mut);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:7px 12px}
 .lang:hover{color:var(--ink);border-color:rgba(255,255,255,.22)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font-weight:600;font-size:15px;border-radius:999px;padding:11px 18px;border:1px solid transparent;transition:transform .18s,background .2s,border-color .2s}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font-weight:700;font-size:15px;border-radius:999px;padding:11px 18px;border:1px solid transparent;transition:transform .18s,background .2s,border-color .2s}
 .btn-primary{background:linear-gradient(100deg,var(--acc),var(--acc2));color:#080a12}
 .btn-primary:hover{transform:translateY(-1px)}
 .btn-ghost{border-color:var(--line);color:var(--ink)}
 .btn-ghost:hover{border-color:rgba(255,255,255,.24);background:rgba(255,255,255,.03)}
 .menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:10px;color:var(--ink);width:38px;height:38px;font-size:18px}
 main{padding-block:clamp(48px,7vw,96px) 0}
-.eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12.5px;letter-spacing:.02em;color:var(--mut);margin:0 0 22px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12.5px;color:var(--mut);margin:0 0 22px}
 .eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:linear-gradient(var(--acc),var(--acc2))}
-h1{margin:0 0 20px;font-size:clamp(32px,5vw,58px);line-height:1.18;letter-spacing:-.01em;font-weight:700}
+h1{margin:0 0 20px;font-size:clamp(32px,5vw,56px);line-height:1.18;font-weight:700}
 .grad{background:linear-gradient(100deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
 .lead{max-width:40ch;font-size:clamp(16px,1.6vw,18px);color:var(--mut);margin:0 0 30px}
 .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,64px);align-items:center}
@@ -107,10 +104,9 @@ h1{margin:0 0 20px;font-size:clamp(32px,5vw,58px);line-height:1.18;letter-spacin
 .chips span{border:1px solid var(--line);border-radius:999px;padding:6px 11px}
 .stage{display:grid;gap:14px}
 .tile{display:flex;align-items:center;gap:14px;background:linear-gradient(160deg,rgba(255,255,255,.06),rgba(255,255,255,.015));border:1px solid var(--line);border-radius:18px;padding:16px 18px}
-.tile img{width:52px;height:52px;border-radius:13px;object-fit:cover}
+.tile img{width:54px;height:54px;border-radius:14px}
 .tile .t-name{font-weight:700;font-size:15px;margin:0}
 .tile .t-sub{margin:2px 0 0;font-size:12.5px;color:var(--mut)}
-.tile:nth-child(2){margin-inline-start:auto;width:88%}
 section{padding-block:clamp(56px,8vw,104px)}
 .section-head{max-width:58ch;margin-bottom:clamp(26px,4vw,44px)}
 h2{margin:0 0 12px;font-size:clamp(24px,3.2vw,36px);line-height:1.25;font-weight:700}
@@ -118,7 +114,7 @@ h2{margin:0 0 12px;font-size:clamp(24px,3.2vw,36px);line-height:1.25;font-weight
 .products{display:grid;gap:18px}
 .product{display:grid;grid-template-columns:84px 1fr;gap:22px;align-items:start;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(20px,3vw,30px);text-decoration:none;transition:border-color .2s,transform .2s}
 .product:hover{border-color:rgba(255,255,255,.2);transform:translateY(-2px)}
-.product img{width:84px;height:84px;border-radius:20px;object-fit:cover}
+.product img{width:84px;height:84px;border-radius:20px}
 .product h3{margin:0 0 6px;font-size:21px}
 .product p{margin:0 0 14px;color:var(--mut);font-size:15px;max-width:62ch}
 .meta{display:flex;flex-wrap:wrap;gap:7px;font-size:12px;color:var(--mut)}
@@ -131,11 +127,9 @@ h2{margin:0 0 12px;font-size:clamp(24px,3.2vw,36px);line-height:1.25;font-weight
 .card p{margin:0;color:var(--mut);font-size:14.5px}
 .langs{display:flex;flex-wrap:wrap;gap:8px;font-size:13px;color:var(--mut)}
 .langs span{border:1px solid var(--line);border-radius:8px;padding:6px 10px}
-.note{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px);align-items:start}
-.note blockquote{margin:0;font-size:clamp(17px,2vw,21px);line-height:1.6;color:var(--ink)}
-.note .who{margin-top:16px;font-size:13px;color:var(--mut)}
-.note ul{margin:0;padding-inline-start:18px;color:var(--mut);font-size:15px}
-.note li{margin-bottom:10px}
+.also{display:flex;flex-wrap:wrap;gap:22px;align-items:baseline;font-size:14.5px;color:var(--mut)}
+.also a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px}
+.also a:hover{border-color:var(--acc)}
 .faq{border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line);padding:18px 0}
 .faq summary{cursor:pointer;font-weight:700;font-size:16px;list-style:none;display:flex;justify-content:space-between;gap:16px}
@@ -148,18 +142,13 @@ h2{margin:0 0 12px;font-size:clamp(24px,3.2vw,36px);line-height:1.25;font-weight
 .band p{margin:0;color:var(--mut)}
 footer{border-top:1px solid var(--line);padding-block:44px 34px;margin-top:clamp(40px,6vw,80px)}
 .foot{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px}
-.foot h4{margin:0 0 12px;font-size:12px;letter-spacing:.06em;color:var(--mut);font-weight:700}
+.foot h4{margin:0 0 12px;font-size:12px;color:var(--mut);font-weight:700}
 .foot a{display:block;color:var(--mut);text-decoration:none;font-size:14px;margin-bottom:8px}
 .foot a:hover{color:var(--ink)}
 .foot-brand p{color:var(--mut);font-size:14px;max-width:34ch}
 .bar{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;margin-top:34px;padding-top:20px;border-top:1px solid var(--line);font-size:12.5px;color:var(--mut)}
-@media(max-width:900px){
-  .hero{grid-template-columns:1fr}.stage{order:-1}.principles{grid-template-columns:1fr}.note{grid-template-columns:1fr}.foot{grid-template-columns:1fr 1fr}
-  nav.main{display:none}.menu-btn{display:block;margin-inline-start:auto}.head-actions .btn-book{display:none}
-  nav.main.open{display:flex;position:absolute;inset:72px 0 auto 0;flex-direction:column;align-items:flex-start;gap:4px;background:#080a12;border-bottom:1px solid var(--line);padding:14px 4vw 18px}
-  nav.main.open a{width:100%;padding:10px 0;border-bottom:1px solid var(--line)}
-}
-@media(max-width:560px){.product{grid-template-columns:1fr}.product img{width:64px;height:64px;border-radius:16px}.foot{grid-template-columns:1fr}.tile:nth-child(2){width:100%}}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.stage{order:-1}.principles{grid-template-columns:1fr}.foot{grid-template-columns:1fr 1fr}nav.main{display:none}.menu-btn{display:block;margin-inline-start:auto}.head-actions .btn-book{display:none}nav.main.open{display:flex;position:absolute;inset:72px 0 auto 0;flex-direction:column;align-items:flex-start;gap:4px;background:#080a12;border-bottom:1px solid var(--line);padding:14px 4vw 18px}nav.main.open a{width:100%;padding:10px 0;border-bottom:1px solid var(--line)}}
+@media(max-width:560px){.product{grid-template-columns:1fr}.product img{width:66px;height:66px;border-radius:16px}.foot{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 </head>
@@ -167,14 +156,14 @@ footer{border-top:1px solid var(--line);padding-block:44px 34px;margin-top:clamp
 <header>
   <div class="wrap head">
     <a class="brand" href="/ar/" aria-label="MD Nexa">
-      <svg viewBox="0 0 120 120" aria-hidden="true"><defs><linearGradient id="al" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5ee0ff"/><stop offset="1" stop-color="#4c7cf5"/></linearGradient><linearGradient id="ar2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5b86ff"/><stop offset="1" stop-color="#a274ff"/></linearGradient><linearGradient id="am" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4aa8f0"/><stop offset="1" stop-color="#7c5bf6"/></linearGradient></defs><rect x="14" y="34" width="24" height="58" rx="12" fill="url(#al)"/><rect x="80" y="18" width="24" height="74" rx="12" fill="url(#ar2)"/><g transform="rotate(38 60 56)"><rect x="40" y="32" width="38" height="22" rx="11" fill="url(#am)"/></g></svg>
+      <svg viewBox="0 0 120 120" aria-hidden="true"><defs><linearGradient id="al" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5ee0ff"/><stop offset="1" stop-color="#4c7cf5"/></linearGradient><linearGradient id="ar2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5b86ff"/><stop offset="1" stop-color="#a274ff"/></linearGradient><linearGradient id="am" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4aa8f0"/><stop offset="1" stop-color="#7c5bf6"/></linearGradient></defs><rect width="120" height="120" rx="27" fill="#0a0e1a"/><rect x="22" y="34" width="21" height="52" rx="10.5" fill="url(#al)"/><rect x="77" y="22" width="21" height="64" rx="10.5" fill="url(#ar2)"/><g transform="rotate(38 60 56)"><rect x="41" y="35" width="32" height="21" rx="10.5" fill="url(#am)"/></g></svg>
       <span class="wm"><b>MD</b> NEXA</span>
     </a>
     <button class="menu-btn" type="button" aria-label="القائمة" aria-expanded="false" onclick="this.setAttribute('aria-expanded',document.querySelector('nav.main').classList.toggle('open'))">☰</button>
     <nav class="main" aria-label="التنقل">
-      <a href="#products">المنتجات</a>
-      <a href="#studio">الاستوديو</a>
-      <a href="/articles/">المقالات</a>
+      <a href="#games">الألعاب</a>
+      <a href="#rules">كيف نبني</a>
+      <a href="/articles/">الأدلة</a>
       <a href="/support/">الدعم</a>
     </nav>
     <div class="head-actions">
@@ -187,98 +176,79 @@ footer{border-top:1px solid var(--line);padding-block:44px 34px;margin-top:clamp
   <div class="wrap">
     <section class="hero" style="padding-block:0">
       <div>
-        <p class="eyebrow">استوديو أندرويد مستقل</p>
-        <h1>برمجيات <span class="grad">تحترم وقتك</span>.</h1>
-        <p class="lead">MD Nexa استوديو صغير يبني تطبيقات وألعاب أندرويد مركّزة. بلا حسابات ولا ضوضاء ولا بيانات تخرج من جهازك: أدوات تفتح فوراً وتؤدي مهمة واحدة بإتقان.</p>
+        <p class="eyebrow">MD Nexa · ألعاب ألغاز أندرويد</p>
+        <h1>لعبتان. <span class="grad">قاعدة واحدة واضحة.</span></h1>
+        <p class="lead">MD Bolt Master يرتّب الصواميل الملوّنة على براغيها، وMD Darkflow يمسح الأسهم المضيئة من لوحة سوداء. كلتاهما تفتح في ثانية، تعمل بدون إنترنت، ولا تطلب منك حساباً.</p>
         <div class="actions">
-          <a class="btn btn-primary" href="#products">تعرّف على منتجاتنا</a>
-          <a class="btn btn-ghost" href="/md-work/">استكشف MD Work</a>
+          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.mdnexa.boltmaster" target="_blank" rel="noopener">العب MD Bolt Master</a>
+          <a class="btn btn-ghost" href="/md-darkflow/">شاهد MD Darkflow</a>
         </div>
         <div class="chips">
-          <span>٤ تطبيقات على Google Play</span>
+          <span>مجانية على Google Play</span>
           <span>١٤ لغة</span>
-          <span>بلا تسجيل</span>
-          <span>تعمل بدون إنترنت</span>
+          <span>بلا حساب</span>
+          <span>بدون إنترنت</span>
         </div>
       </div>
       <div class="stage" aria-hidden="true">
         <div class="tile">
-          <img src="/assets/md-work.jpg" alt="" width="52" height="52" loading="eager">
-          <div><p class="t-name">MD Work</p><p class="t-sub">أيام العمل والأرباح والمصاريف</p></div>
+          <img src="/assets/game-bolt.svg" alt="" width="54" height="54" loading="eager">
+          <div><p class="t-name">MD Bolt Master</p><p class="t-sub">رتّب كل لون على برغيه</p></div>
         </div>
         <div class="tile">
-          <img src="/assets/md-corpses.jpg" alt="" width="52" height="52" loading="eager">
-          <div><p class="t-name">MD Corpses</p><p class="t-sub">تسلّق بإصبع واحد</p></div>
+          <img src="/assets/game-darkflow.svg" alt="" width="54" height="54" loading="eager">
+          <div><p class="t-name">MD Darkflow</p><p class="t-sub">امسح الأسهم واحفظ قلوبك</p></div>
         </div>
       </div>
     </section>
   </div>
 
-  <section id="products">
+  <section id="games">
     <div class="wrap">
-      <div class="section-head">
-        <h2>منتجان نقف خلفهما</h2>
-        <p class="sub">كل ما ننشره مجاني، لا يحتاج حساباً، ويُبقي بياناتك على هاتفك.</p>
-      </div>
+      <div class="section-head"><h2>لعبتا الألغاز</h2><p class="sub">مهمة واحدة لكل لعبة، منجزة بإتقان: بلا طاقة، بلا مؤقت، بلا تسجيل.</p></div>
       <div class="products">
-        <a class="product" href="/md-work/">
-          <img src="/assets/md-work.jpg" alt="أيقونة MD Work" width="84" height="84" loading="lazy">
+        <a class="product" href="/md-boltmaster/">
+          <img src="/assets/game-bolt.svg" alt="أيقونة MD Bolt Master" width="84" height="84" loading="lazy">
           <div>
-            <h3>MD Work</h3>
-            <p>دفتر عمل لمن يُدفع له باليوم: سجّل اليوم والساعات والأرباح والمصاريف، ثم اقرأ الإجمالي أسبوعياً أو شهرياً. بلا اشتراك، بلا سحابة، بلا تسجيل دخول.</p>
-            <div class="meta"><span>أندرويد</span><span>Google Play</span><span>مجاني</span><span>بدون إنترنت</span></div>
-            <span class="more">افتح صفحة MD Work ←</span>
+            <h3>MD Bolt Master</h3>
+            <p>اللعبة الهادئة: انقل كل صامولة إلى برغي لونها حتى تصفو اللوحة. مستويات متدرجة، ونجوم تُنفقها على المساعدة، ولوحة يومية قصيرة يلعبها الجميع معاً.</p>
+            <div class="meta"><span>أندرويد</span><span>ألغاز</span><span>مجاني</span><span>بدون إنترنت</span></div>
+            <span class="more">افتح صفحة اللعبة ←</span>
           </div>
         </a>
-        <a class="product" href="/md-corpses/">
-          <img src="/assets/md-corpses.jpg" alt="أيقونة MD Corpses" width="84" height="84" loading="lazy">
+        <a class="product" href="/md-darkflow/">
+          <img src="/assets/game-darkflow.svg" alt="أيقونة MD Darkflow" width="84" height="84" loading="lazy">
           <div>
-            <h3>MD Corpses</h3>
-            <p>تستيقظ في قاع بئر دون أن تتذكر سقوطك. كل قفزة مهمة، وكل موت يخلّف جثة تبقى حيث سقطت: إخفاقاتك تصبح درجات جسر إلى السطح.</p>
-            <div class="meta"><span>أندرويد</span><span>Google Play</span><span>مجاني</span><span>إصبع واحد</span></div>
-            <span class="more">افتح صفحة MD Corpses ←</span>
+            <h3>MD Darkflow</h3>
+            <p>اللعبة الحادّة: اضغط السهم ليخرج من اللوحة، لكن بشرط أن يكون طريقه خالياً. مئة مستوى، ثلاثة قلوب، وتلميح واحد كل يوم.</p>
+            <div class="meta"><span>أندرويد</span><span>ألغاز</span><span>مجاني</span><span>بدون إنترنت</span></div>
+            <span class="more">افتح صفحة اللعبة ←</span>
           </div>
         </a>
+      </div>
+      <div class="also" style="margin-block-start:28px">
+        <span>أيضاً من الاستوديو:</span>
+        <a href="/md-work/">MD Work — دفتر أيام العمل</a>
+        <a href="/md-corpses/">MD Corpses — تسلّق بإصبع</a>
+        <a href="/games/">كل الألعاب ←</a>
       </div>
     </div>
   </section>
 
-  <section>
+  <section id="rules">
     <div class="wrap">
-      <div class="section-head">
-        <h2>ثلاث قواعد لا نكسرها</h2>
-        <p class="sub">هي التي تحدّد ما نبنيه، وغالباً ما نرفض بناءه.</p>
-      </div>
+      <div class="section-head"><h2>ثلاث قواعد لا نكسرها</h2><p class="sub">هي التي تحدّد ما نبنيه، وغالباً ما نرفض بناءه.</p></div>
       <div class="principles">
-        <div class="card"><p class="n">٠١</p><h3>لا شيء تسجّل فيه</h3><p>لا حساب ولا ملف شخصي ولا بريد إلكتروني. تثبّت التطبيق وتستخدمه، وسجلاتك في ذاكرة جهازك.</p></div>
-        <div class="card"><p class="n">٠٢</p><h3>بدون إنترنت أساساً</h3><p>طائرة أو قبو أو منطقة بلا تغطية: التطبيق يفتح ويعمل. المزامنة ليست شرطاً لاستخدام ما حصلت عليه مجاناً.</p></div>
-        <div class="card"><p class="n">٠٣</p><h3>ترجمة بشر لا آلة</h3><p>أربع عشرة لغة، كل واحدة مكتوبة ومراجعة يدوياً. القوائم المترجمة آلياً هي التي تجعل البرنامج يبدو غريباً في لغته.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="studio">
-    <div class="wrap note">
-      <div>
-        <h2>استوديو صغير، عن قصد</h2>
-        <blockquote>«نفضّل أن ننشر منتجين يعملان لسنوات على عشرين منتجاً يبدون جميلين في منشور إطلاق. كل إصدار يُختبر على هواتف بميزانية محدودة قبل أن يصل إلى المتجر.»</blockquote>
-        <p class="who">MD Nexa — استوديو مستقل · <a href="mailto:mdnexa9@gmail.com">mdnexa9@gmail.com</a></p>
-      </div>
-      <div>
-        <h4 style="font-size:12px;color:var(--mut);margin:0 0 14px">ماذا يعني ذلك عملياً</h4>
-        <ul>
-          <li>كل تطبيق مجاني على Google Play، بلا اشتراك وبلا ميزة مقفلة.</li>
-          <li>الدعم يجيب عليه من بنى التطبيق، بالعربية أو الإنجليزية.</li>
-          <li>صفحات المتجر واللقطات والنصوص مترجمة للأربع عشرة لغة.</li>
-          <li>أي ميزة لا تعمل بدون إنترنت لا تُنشر كميزة أساسية.</li>
-        </ul>
+        <div class="card"><p class="n">٠١</p><h3>قاعدة تتعلّمها في عشر ثوانٍ</h3><p>شاشة واحدة وآلية واحدة، بلا فيديو تعليمي. إن احتاج المستوى شرحاً فالمشكلة في المستوى لا في اللاعب.</p></div>
+        <div class="card"><p class="n">٠٢</p><h3>بدون إنترنت قبل أي شيء</h3><p>لا شاشة انتظار بينك وبين اللوحة. المستويات تعمل في الطائرة أو القبو أو منطقة بلا تغطية.</p></div>
+        <div class="card"><p class="n">٠٣</p><h3>أربع عشرة لغة بيد بشر</h3><p>كل قائمة وصفحة متجر مكتوبة ومراجعة بشرياً. الترجمة الآلية هي التي تجعل اللعبة تبدو غريبة في لغتك.</p></div>
       </div>
     </div>
   </section>
 
   <section>
     <div class="wrap">
-      <div class="section-head"><h2>أربع عشرة لغة داخل كل تطبيق</h2><p class="sub">صفحات المتجر واللقطات ونصوص التطبيق، كلها مترجمة.</p></div>
+      <div class="section-head"><h2>العب بلغتك</h2><p class="sub">نصوص اللعبة وصفحات المتجر، كلها مترجمة.</p></div>
       <div class="langs"><span>العربية</span><span>English</span><span>Français</span><span>Español</span><span>Deutsch</span><span>日本語</span><span>中文</span><span>한국어</span><span>Русский</span><span>Türkçe</span><span>Italiano</span><span>Português</span><span>हिन्दी</span><span>Indonesia</span></div>
     </div>
   </section>
@@ -287,18 +257,18 @@ footer{border-top:1px solid var(--line);padding-block:44px 34px;margin-top:clamp
     <div class="wrap">
       <div class="section-head"><h2>أسئلة تتكرر</h2></div>
       <div class="faq">
-        <details open><summary>هل تطبيقاتكم مجانية فعلاً؟</summary><p>نعم، كل تطبيق ولعبة مجانية على Google Play. لا اشتراك ولا مؤقت تجربة ولا حساب.</p></details>
-        <details><summary>ماذا يحدث لبياناتي؟</summary><p>تبقى على جهازك. MD Work يحفظ أيام العمل والأرباح محلياً، ولا ندير خادماً يحتفظ بنسخة من سجلاتك.</p></details>
-        <details><summary>هل تعمل بدون إنترنت؟</summary><p>نعم، MD Work وMD Corpses تعملان بلا اتصال. في الألعاب الأحدث يحتاج التحدي اليومي الاختياري فقط اتصالاً قصيراً.</p></details>
-        <details><summary>كيف أحصل على مساعدة؟</summary><p>اكتب إلى <a href="mailto:mdnexa9@gmail.com">mdnexa9@gmail.com</a> أو استخدم <a href="/support/">صفحة الدعم</a>. الرد يأتي من الاستوديو، عادة خلال يومَي عمل.</p></details>
+        <details open><summary>هل الألعاب مجانية فعلاً؟</summary><p>نعم، كلتاهما مجانية على Google Play، بلا اشتراك وبلا مؤقت تجربة وبلا حساب.</p></details>
+        <details><summary>هل تعمل بدون إنترنت؟</summary><p>كل المستويات تعمل بلا اتصال. التحدي اليومي الاختياري فقط يحتاج اتصالاً قصيراً لتحميل لوحة اليوم ثم يعمل دون اتصال.</p></details>
+        <details><summary>هل يوجد مؤقت أو طاقة؟</summary><p>لا مؤقت ولا طاقة ولا شيء ينتهي. تترك اللوحة وتعود إليها متى شئت.</p></details>
+        <details><summary>كيف أحصل على مساعدة؟</summary><p>اكتب إلى <a href="mailto:mdnexa9@gmail.com">mdnexa9@gmail.com</a> أو استخدم <a href="/support/">صفحة الدعم</a>. الرد يأتي من الاستوديو.</p></details>
       </div>
     </div>
   </section>
 
   <div class="wrap">
     <div class="band">
-      <div><h2>ابدأ بـ MD Work</h2><p>مجاني على Google Play · أندرويد ٨ وأحدث · بياناتك تبقى على هاتفك.</p></div>
-      <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=app.mdwork.notebook" target="_blank" rel="noopener">احصل عليه من Google Play</a>
+      <div><h2>ابدأ بـ MD Bolt Master</h2><p>مجانية على Google Play · أندرويد ٨ وأحدث · بدون إنترنت تماماً</p></div>
+      <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.mdnexa.boltmaster" target="_blank" rel="noopener">احصل عليها من Google Play</a>
     </div>
   </div>
 </main>
@@ -307,13 +277,13 @@ footer{border-top:1px solid var(--line);padding-block:44px 34px;margin-top:clamp
     <div class="foot">
       <div class="foot-brand">
         <a class="brand" href="/ar/" aria-label="MD Nexa" style="margin-bottom:14px">
-          <svg viewBox="0 0 120 120" aria-hidden="true" style="width:28px;height:28px"><rect x="14" y="34" width="24" height="58" rx="12" fill="#4fc3f7"/><rect x="80" y="18" width="24" height="74" rx="12" fill="#7c5bf6"/><g transform="rotate(38 60 56)"><rect x="40" y="32" width="38" height="22" rx="11" fill="#6ea8ff"/></g></svg>
+          <svg viewBox="0 0 120 120" aria-hidden="true" style="width:28px;height:28px;border-radius:7px"><rect width="120" height="120" rx="27" fill="#0a0e1a"/><rect x="22" y="34" width="21" height="52" rx="10.5" fill="#4fc3f7"/><rect x="77" y="22" width="21" height="64" rx="10.5" fill="#7c5bf6"/><g transform="rotate(38 60 56)"><rect x="41" y="35" width="32" height="21" rx="10.5" fill="#6ea8ff"/></g></svg>
           <span class="wm"><b>MD</b> NEXA</span>
         </a>
         <p>استوديو أندرويد مستقل. البساطة قوّتنا.</p>
       </div>
-      <div><h4>المنتجات</h4><a href="/md-work/">MD Work</a><a href="/md-corpses/">MD Corpses</a><a href="/games/">كل الألعاب</a></div>
-      <div><h4>الاستوديو</h4><a href="/company/">من نحن</a><a href="/articles/">المقالات</a><a href="/services/">الخدمات</a></div>
+      <div><h4>الألعاب</h4><a href="/md-boltmaster/">MD Bolt Master</a><a href="/md-darkflow/">MD Darkflow</a><a href="/games/">كل الألعاب</a></div>
+      <div><h4>الاستوديو</h4><a href="/articles/">الأدلة</a><a href="/company/">من نحن</a><a href="/services/">الخدمات</a></div>
       <div><h4>الدعم</h4><a href="/support/">مركز المساعدة</a><a href="/privacy/">سياسة الخصوصية</a><a href="mailto:mdnexa9@gmail.com">mdnexa9@gmail.com</a><a href="/" hreflang="en" lang="en">English</a></div>
     </div>
     <div class="bar"><span>© ٢٠٢٦ MD Nexa. جميع الحقوق محفوظة.</span><span>صُنع لأندرويد.</span></div>

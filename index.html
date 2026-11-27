@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MD Nexa — Independent Android studio</title>
-<meta name="description" content="MD Nexa builds small, focused Android apps and games: MD Work for workdays and earnings, MD Corpses for one-finger climbing. Free, no accounts, offline by default, 14 languages.">
+<title>MD Nexa — Android puzzle games: MD Bolt Master & MD Darkflow</title>
+<meta name="description" content="Two free Android puzzle games from MD Nexa: MD Bolt Master sorts coloured bolts, MD Darkflow clears neon arrows. Offline, 14 languages, no account.">
 <link rel="canonical" href="https://mdnexa.online/">
 <link rel="alternate" hreflang="en" href="https://mdnexa.online/">
 <link rel="alternate" hreflang="ar" href="https://mdnexa.online/ar/">
@@ -20,8 +20,8 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="MD Nexa">
 <meta property="og:url" content="https://mdnexa.online/">
-<meta property="og:title" content="MD Nexa — Independent Android studio">
-<meta property="og:description" content="Small, focused Android apps and games. Free, no accounts, offline by default.">
+<meta property="og:title" content="MD Nexa — Android puzzle games">
+<meta property="og:description" content="MD Bolt Master and MD Darkflow: free, offline, fourteen languages, no account.">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="ar_AR">
 <meta property="og:image" content="https://mdnexa.online/assets/og-image.jpg">
@@ -40,7 +40,7 @@
       "url": "https://mdnexa.online/",
       "logo": "https://mdnexa.online/assets/logo.svg",
       "email": "mdnexa9@gmail.com",
-      "description": "Independent Android studio building small, focused apps and games that work offline and need no account.",
+      "description": "Independent Android studio making small puzzle games and focused apps.",
       "sameAs": [
         "https://www.facebook.com/p/MD-Nexa-61596090351733",
         "https://www.tiktok.com/@mdnexa.studio",
@@ -62,20 +62,20 @@
         {
           "@type": "ListItem", "position": 1,
           "item": {
-            "@type": "SoftwareApplication", "name": "MD Work",
-            "operatingSystem": "Android", "applicationCategory": "BusinessApplication",
-            "url": "https://mdnexa.online/md-work/",
-            "installUrl": "https://play.google.com/store/apps/details?id=app.mdwork.notebook",
+            "@type": "VideoGame", "name": "MD Bolt Master",
+            "operatingSystem": "Android", "applicationCategory": "GameApplication", "genre": "Puzzle",
+            "url": "https://mdnexa.online/md-boltmaster/",
+            "installUrl": "https://play.google.com/store/apps/details?id=com.mdnexa.boltmaster",
             "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
           }
         },
         {
           "@type": "ListItem", "position": 2,
           "item": {
-            "@type": "VideoGame", "name": "MD Corpses",
-            "operatingSystem": "Android", "applicationCategory": "GameApplication", "genre": "Arcade",
-            "url": "https://mdnexa.online/md-corpses/",
-            "installUrl": "https://play.google.com/store/apps/details?id=com.mdnexa.corpses",
+            "@type": "VideoGame", "name": "MD Darkflow",
+            "operatingSystem": "Android", "applicationCategory": "GameApplication", "genre": "Puzzle",
+            "url": "https://mdnexa.online/md-darkflow/",
+            "installUrl": "https://play.google.com/store/apps/details?id=com.mdnexa.Darkflow",
             "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
           }
         }
@@ -84,36 +84,26 @@
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "Are MD Nexa apps free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every app and game we publish is free on Google Play, with no subscription and no account." } },
-        { "@type": "Question", "name": "Do you collect my data?", "acceptedAnswer": { "@type": "Answer", "text": "Your records stay on your device. There is no account, no cloud sync and no profile: MD Work keeps workdays and earnings locally." } },
-        { "@type": "Question", "name": "Which languages are supported?", "acceptedAnswer": { "@type": "Answer", "text": "Fourteen: Arabic, English, French, Spanish, German, Japanese, Chinese, Korean, Russian, Turkish, Italian, Portuguese, Hindi and Indonesian. Each one is written by hand, not machine translated." } },
-        { "@type": "Question", "name": "Do the apps work offline?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. MD Work and MD Corpses work without a connection; only optional daily challenges in our newer games need a short connection." } }
+        { "@type": "Question", "name": "Are the games free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. MD Bolt Master and MD Darkflow are free on Google Play, with no subscription and no account." } },
+        { "@type": "Question", "name": "Do they work offline?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, every level works with no connection. Only the optional daily board needs a short connection to load." } },
+        { "@type": "Question", "name": "Which languages are supported?", "acceptedAnswer": { "@type": "Answer", "text": "Fourteen, written by hand: Arabic, English, French, Spanish, German, Japanese, Chinese, Korean, Russian, Turkish, Italian, Portuguese, Hindi and Indonesian." } },
+        { "@type": "Question", "name": "Is there a timer or an energy system?", "acceptedAnswer": { "@type": "Answer", "text": "No. Levels have no timer and no energy bar; you can stop in the middle of a board and come back later." } }
       ]
     }
   ]
 }
 </script>
 <style>
-:root{
-  --bg:#05060c; --panel:#0b0e18; --ink:#f2f5fb; --mut:#98a2b3; --line:rgba(255,255,255,.09);
-  --acc:#5ee0ff; --acc2:#7c5bf6; --radius:20px;
-}
+:root{--bg:#05060c;--panel:#0b0e18;--ink:#f2f5fb;--mut:#98a2b3;--line:rgba(255,255,255,.09);--acc:#5ee0ff;--acc2:#7c5bf6;--radius:20px}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;color:var(--ink);font:16px/1.65 "Space Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
-  background:
-    radial-gradient(110% 70% at 85% -15%, rgba(110,168,255,.18), transparent 60%),
-    radial-gradient(80% 55% at 5% -5%, rgba(160,114,255,.14), transparent 55%),
-    var(--bg);
-  -webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-a{color:inherit}
+body{margin:0;color:var(--ink);font:16px/1.65 "Space Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;background:radial-gradient(110% 70% at 85% -15%,rgba(110,168,255,.18),transparent 60%),radial-gradient(80% 55% at 5% -5%,rgba(160,114,255,.14),transparent 55%),var(--bg);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}a{color:inherit}
 .wrap{width:min(1120px,92vw);margin-inline:auto}
-
 header{position:sticky;top:0;z-index:60;background:rgba(5,6,12,.78);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
 .head{display:flex;align-items:center;gap:14px;height:72px}
 .brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;flex:0 0 auto}
-.brand svg{width:32px;height:32px;display:block}
+.brand svg{width:34px;height:34px;display:block;border-radius:9px}
 .wm{font-size:13.5px;font-weight:600;letter-spacing:.16em;white-space:nowrap}
 .wm b{font-weight:700}
 nav.main{margin-inline-start:auto;display:flex;align-items:center;gap:24px;font-size:14.5px}
@@ -128,24 +118,21 @@ nav.main a:hover{color:var(--ink);border-color:var(--line)}
 .btn-ghost{border-color:var(--line);color:var(--ink)}
 .btn-ghost:hover{border-color:rgba(255,255,255,.24);background:rgba(255,255,255,.03)}
 .menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:10px;color:var(--ink);width:38px;height:38px;font-size:18px}
-
 main{padding-block:clamp(48px,7vw,96px) 0}
 .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--mut);margin:0 0 22px}
 .eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:linear-gradient(var(--acc),var(--acc2))}
-h1{margin:0 0 20px;font-size:clamp(34px,5.2vw,62px);line-height:1.05;letter-spacing:-.025em;font-weight:700}
+h1{margin:0 0 20px;font-size:clamp(34px,5.2vw,60px);line-height:1.06;letter-spacing:-.025em;font-weight:700}
 .grad{background:linear-gradient(100deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
 .lead{max-width:38ch;font-size:clamp(16px,1.6vw,18.5px);color:var(--mut);margin:0 0 30px}
 .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,64px);align-items:center}
 .actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
 .chips{display:flex;flex-wrap:wrap;gap:8px;font-size:12.5px;color:var(--mut)}
 .chips span{border:1px solid var(--line);border-radius:999px;padding:6px 11px}
-.stage{position:relative;display:grid;gap:14px}
+.stage{display:grid;gap:14px}
 .tile{display:flex;align-items:center;gap:14px;background:linear-gradient(160deg,rgba(255,255,255,.06),rgba(255,255,255,.015));border:1px solid var(--line);border-radius:18px;padding:16px 18px}
-.tile img{width:52px;height:52px;border-radius:13px;object-fit:cover}
+.tile img{width:54px;height:54px;border-radius:14px}
 .tile .t-name{font-weight:600;font-size:15px;margin:0}
 .tile .t-sub{margin:2px 0 0;font-size:12.5px;color:var(--mut)}
-.tile:nth-child(2){margin-inline-start:auto;width:88%}
-
 section{padding-block:clamp(56px,8vw,104px)}
 .section-head{max-width:56ch;margin-bottom:clamp(26px,4vw,44px)}
 h2{margin:0 0 12px;font-size:clamp(24px,3.2vw,36px);line-height:1.15;letter-spacing:-.02em;font-weight:700}
@@ -153,28 +140,22 @@ h2{margin:0 0 12px;font-size:clamp(24px,3.2vw,36px);line-height:1.15;letter-spac
 .products{display:grid;gap:18px}
 .product{display:grid;grid-template-columns:84px 1fr;gap:22px;align-items:start;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(20px,3vw,30px);text-decoration:none;transition:border-color .2s,transform .2s}
 .product:hover{border-color:rgba(255,255,255,.2);transform:translateY(-2px)}
-.product img{width:84px;height:84px;border-radius:20px;object-fit:cover}
+.product img{width:84px;height:84px;border-radius:20px}
 .product h3{margin:0 0 6px;font-size:21px;letter-spacing:-.01em}
 .product p{margin:0 0 14px;color:var(--mut);font-size:15px;max-width:62ch}
 .meta{display:flex;flex-wrap:wrap;gap:7px;font-size:12px;color:var(--mut)}
 .meta span{border:1px solid var(--line);border-radius:999px;padding:4px 9px}
 .more{display:inline-block;margin-top:14px;font-size:13.5px;font-weight:600;color:var(--ink)}
-
 .principles{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
 .card .n{font-size:12px;letter-spacing:.2em;color:var(--mut);margin:0 0 14px}
 .card h3{margin:0 0 8px;font-size:17px}
 .card p{margin:0;color:var(--mut);font-size:14.5px}
-
 .langs{display:flex;flex-wrap:wrap;gap:8px;font-size:13px;color:var(--mut)}
 .langs span{border:1px solid var(--line);border-radius:8px;padding:6px 10px}
-
-.note{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px);align-items:start}
-.note blockquote{margin:0;font-size:clamp(17px,2vw,21px);line-height:1.5;color:var(--ink)}
-.note .who{margin-top:16px;font-size:13px;color:var(--mut)}
-.note ul{margin:0;padding-inline-start:18px;color:var(--mut);font-size:15px}
-.note li{margin-bottom:10px}
-
+.also{display:flex;flex-wrap:wrap;gap:26px;align-items:baseline;font-size:14.5px;color:var(--mut)}
+.also a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px}
+.also a:hover{border-color:var(--acc)}
 .faq{border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line);padding:18px 0}
 .faq summary{cursor:pointer;font-weight:600;font-size:16px;list-style:none;display:flex;justify-content:space-between;gap:16px}
@@ -182,11 +163,9 @@ h2{margin:0 0 12px;font-size:clamp(24px,3.2vw,36px);line-height:1.15;letter-spac
 .faq summary::after{content:"+";color:var(--mut);font-weight:400}
 .faq details[open] summary::after{content:"–"}
 .faq p{margin:12px 0 0;color:var(--mut);font-size:15px;max-width:70ch}
-
 .band{margin-block:clamp(40px,6vw,72px);background:linear-gradient(120deg,rgba(94,224,255,.14),rgba(124,91,246,.16));border:1px solid var(--line);border-radius:26px;padding:clamp(26px,4vw,44px);display:flex;flex-wrap:wrap;gap:22px;align-items:center;justify-content:space-between}
 .band h2{margin:0 0 6px}
 .band p{margin:0;color:var(--mut)}
-
 footer{border-top:1px solid var(--line);padding-block:44px 34px;margin-top:clamp(40px,6vw,80px)}
 .foot{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px}
 .foot h4{margin:0 0 12px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mut);font-weight:600}
@@ -194,25 +173,8 @@ footer{border-top:1px solid var(--line);padding-block:44px 34px;margin-top:clamp
 .foot a:hover{color:var(--ink)}
 .foot-brand p{color:var(--mut);font-size:14px;max-width:34ch}
 .bar{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;margin-top:34px;padding-top:20px;border-top:1px solid var(--line);font-size:12.5px;color:var(--mut)}
-
-@media(max-width:900px){
-  .hero{grid-template-columns:1fr}
-  .stage{order:-1}
-  .principles{grid-template-columns:1fr}
-  .note{grid-template-columns:1fr}
-  .foot{grid-template-columns:1fr 1fr}
-  nav.main{display:none}
-  .menu-btn{display:block;margin-inline-start:auto}
-  .head-actions .btn-book{display:none}
-  nav.main.open{display:flex;position:absolute;inset:72px 0 auto 0;flex-direction:column;align-items:flex-start;gap:4px;background:#080a12;border-bottom:1px solid var(--line);padding:14px 4vw 18px}
-  nav.main.open a{width:100%;padding:10px 0;border-bottom:1px solid var(--line)}
-}
-@media(max-width:560px){
-  .product{grid-template-columns:1fr}
-  .product img{width:64px;height:64px;border-radius:16px}
-  .foot{grid-template-columns:1fr}
-  .tile:nth-child(2){width:100%}
-}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.stage{order:-1}.principles{grid-template-columns:1fr}.foot{grid-template-columns:1fr 1fr}nav.main{display:none}.menu-btn{display:block;margin-inline-start:auto}.head-actions .btn-book{display:none}nav.main.open{display:flex;position:absolute;inset:72px 0 auto 0;flex-direction:column;align-items:flex-start;gap:4px;background:#080a12;border-bottom:1px solid var(--line);padding:14px 4vw 18px}nav.main.open a{width:100%;padding:10px 0;border-bottom:1px solid var(--line)}}
+@media(max-width:560px){.product{grid-template-columns:1fr}.product img{width:66px;height:66px;border-radius:16px}.foot{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 </head>
@@ -220,14 +182,14 @@ footer{border-top:1px solid var(--line);padding-block:44px 34px;margin-top:clamp
 <header>
   <div class="wrap head">
     <a class="brand" href="/" aria-label="MD Nexa home">
-      <svg viewBox="0 0 120 120" aria-hidden="true"><defs><linearGradient id="gl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5ee0ff"/><stop offset="1" stop-color="#4c7cf5"/></linearGradient><linearGradient id="gr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5b86ff"/><stop offset="1" stop-color="#a274ff"/></linearGradient><linearGradient id="gm" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4aa8f0"/><stop offset="1" stop-color="#7c5bf6"/></linearGradient></defs><rect x="14" y="34" width="24" height="58" rx="12" fill="url(#gl)"/><rect x="80" y="18" width="24" height="74" rx="12" fill="url(#gr)"/><g transform="rotate(38 60 56)"><rect x="40" y="32" width="38" height="22" rx="11" fill="url(#gm)"/></g></svg>
+      <svg viewBox="0 0 120 120" aria-hidden="true"><defs><linearGradient id="gl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5ee0ff"/><stop offset="1" stop-color="#4c7cf5"/></linearGradient><linearGradient id="gr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5b86ff"/><stop offset="1" stop-color="#a274ff"/></linearGradient><linearGradient id="gm" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4aa8f0"/><stop offset="1" stop-color="#7c5bf6"/></linearGradient></defs><rect width="120" height="120" rx="27" fill="#0a0e1a"/><rect x="22" y="34" width="21" height="52" rx="10.5" fill="url(#gl)"/><rect x="77" y="22" width="21" height="64" rx="10.5" fill="url(#gr)"/><g transform="rotate(38 60 56)"><rect x="41" y="35" width="32" height="21" rx="10.5" fill="url(#gm)"/></g></svg>
       <span class="wm"><b>MD</b> NEXA</span>
     </a>
     <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" onclick="this.setAttribute('aria-expanded',document.querySelector('nav.main').classList.toggle('open'))">☰</button>
     <nav class="main" aria-label="Main">
-      <a href="#products">Products</a>
-      <a href="#studio">Studio</a>
-      <a href="/articles/">Notes</a>
+      <a href="#games">Games</a>
+      <a href="#rules">How we build</a>
+      <a href="/articles/">Guides</a>
       <a href="/support/">Support</a>
     </nav>
     <div class="head-actions">
@@ -241,122 +203,86 @@ footer{border-top:1px solid var(--line);padding-block:44px 34px;margin-top:clamp
   <div class="wrap">
     <section class="hero" style="padding-block:0">
       <div>
-        <p class="eyebrow">Independent Android studio</p>
-        <h1>Software that <span class="grad">respects your time</span>.</h1>
-        <p class="lead">MD Nexa is a small studio building focused Android apps and games. No accounts, no noise, no data off your device: just tools that open instantly and do one job well.</p>
+        <p class="eyebrow">MD Nexa · Android puzzle games</p>
+        <h1>Two puzzles. <span class="grad">One clear rule.</span></h1>
+        <p class="lead">MD Bolt Master sorts coloured bolts onto their own screws. MD Darkflow clears neon arrows off a black board. Both open in a second, work offline, and never ask you to sign in.</p>
         <div class="actions">
-          <a class="btn btn-primary" href="#products">See our products</a>
-          <a class="btn btn-ghost" href="/md-work/">Explore MD Work</a>
+          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.mdnexa.boltmaster" target="_blank" rel="noopener">Play MD Bolt Master</a>
+          <a class="btn btn-ghost" href="/md-darkflow/">See MD Darkflow</a>
         </div>
         <div class="chips">
-          <span>4 apps on Google Play</span>
+          <span>Free on Google Play</span>
           <span>14 languages</span>
-          <span>No sign-up</span>
+          <span>No account</span>
           <span>Works offline</span>
         </div>
       </div>
       <div class="stage" aria-hidden="true">
         <div class="tile">
-          <img src="/assets/md-work.jpg" alt="" width="52" height="52" loading="eager">
-          <div>
-            <p class="t-name">MD Work</p>
-            <p class="t-sub">Workdays, earnings, expenses</p>
-          </div>
+          <img src="/assets/game-bolt.svg" alt="" width="54" height="54" loading="eager">
+          <div><p class="t-name">MD Bolt Master</p><p class="t-sub">Sort every colour onto its bolt</p></div>
         </div>
         <div class="tile">
-          <img src="/assets/md-corpses.jpg" alt="" width="52" height="52" loading="eager">
-          <div>
-            <p class="t-name">MD Corpses</p>
-            <p class="t-sub">One-finger climbing</p>
-          </div>
+          <img src="/assets/game-darkflow.svg" alt="" width="54" height="54" loading="eager">
+          <div><p class="t-name">MD Darkflow</p><p class="t-sub">Clear the arrows, keep three hearts</p></div>
         </div>
       </div>
     </section>
   </div>
 
-  <section id="products">
+  <section id="games">
     <div class="wrap">
       <div class="section-head">
-        <h2>Two products we stand behind</h2>
-        <p class="sub">Everything we ship is free, needs no account, and keeps your data on your phone.</p>
+        <h2>Our two puzzle games</h2>
+        <p class="sub">One job per game, done properly: no energy bars, no timers, no sign-up.</p>
       </div>
       <div class="products">
-        <a class="product" href="/md-work/">
-          <img src="/assets/md-work.jpg" alt="MD Work icon" width="84" height="84" loading="lazy">
+        <a class="product" href="/md-boltmaster/">
+          <img src="/assets/game-bolt.svg" alt="MD Bolt Master icon" width="84" height="84" loading="lazy">
           <div>
-            <h3>MD Work</h3>
-            <p>A work notebook for people paid by the day: log the day, the hours, the earnings and the expenses, then read the total by week or month. No subscription, no cloud, no sign-in.</p>
-            <div class="meta"><span>Android</span><span>Google Play</span><span>Free</span><span>Offline</span></div>
-            <span class="more">Open the MD Work page →</span>
+            <h3>MD Bolt Master</h3>
+            <p>The calm one. Move each nut onto the screw of its own colour until every bolt is clean. Graded levels, stars you can spend on help, and a short daily board shared by every player.</p>
+            <div class="meta"><span>Android</span><span>Puzzle</span><span>Free</span><span>Offline</span></div>
+            <span class="more">Open the game page →</span>
           </div>
         </a>
-        <a class="product" href="/md-corpses/">
-          <img src="/assets/md-corpses.jpg" alt="MD Corpses icon" width="84" height="84" loading="lazy">
+        <a class="product" href="/md-darkflow/">
+          <img src="/assets/game-darkflow.svg" alt="MD Darkflow icon" width="84" height="84" loading="lazy">
           <div>
-            <h3>MD Corpses</h3>
-            <p>You wake at the bottom of a well with no memory of the fall. Every jump counts, and every death leaves a body behind: your failures become the steps of a bridge to the surface.</p>
-            <div class="meta"><span>Android</span><span>Google Play</span><span>Free</span><span>One finger</span></div>
-            <span class="more">Open the MD Corpses page →</span>
+            <h3>MD Darkflow</h3>
+            <p>The sharp one. Tap an arrow and it leaves the board, but only if its path is clear. A hundred levels, three hearts, one hint a day, and a shared daily board.</p>
+            <div class="meta"><span>Android</span><span>Puzzle</span><span>Free</span><span>Offline</span></div>
+            <span class="more">Open the game page →</span>
           </div>
         </a>
+      </div>
+      <div class="also" style="margin-block-start:28px">
+        <span>Also from the studio:</span>
+        <a href="/md-work/">MD Work — day-rate notebook</a>
+        <a href="/md-corpses/">MD Corpses — one-finger climbing</a>
+        <a href="/games/">All games →</a>
       </div>
     </div>
   </section>
 
-  <section>
+  <section id="rules">
     <div class="wrap">
       <div class="section-head">
         <h2>Three rules we do not break</h2>
         <p class="sub">They decide what we build and, more often, what we refuse to build.</p>
       </div>
       <div class="principles">
-        <div class="card">
-          <p class="n">01</p>
-          <h3>Nothing to sign up for</h3>
-          <p>No account, no profile, no email wall. You install the app and use it; your records stay in your device storage.</p>
-        </div>
-        <div class="card">
-          <p class="n">02</p>
-          <h3>Offline by default</h3>
-          <p>A plane, a basement, a dead zone: the app opens and works. Sync is never a precondition for using what you paid nothing for.</p>
-        </div>
-        <div class="card">
-          <p class="n">03</p>
-          <h3>Translated by people</h3>
-          <p>Fourteen languages, each written and reviewed by hand. Machine-translated menus are how software feels foreign in its own language.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="studio">
-    <div class="wrap note">
-      <div>
-        <h2>A small studio, on purpose</h2>
-        <blockquote>“We would rather ship two products that work for years than twenty that look good in a launch post. Every release is tested on real budget phones before it reaches the store.”</blockquote>
-        <p class="who">MD Nexa — independent studio · <a href="mailto:mdnexa9@gmail.com">mdnexa9@gmail.com</a></p>
-      </div>
-      <div>
-        <h4 style="font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mut);margin:0 0 14px">What that means in practice</h4>
-        <ul>
-          <li>Every app is free on Google Play, with no subscription and no locked feature.</li>
-          <li>Support is answered by the people who built the app, in Arabic or English.</li>
-          <li>Store listings, screenshots and copy are localised for all fourteen languages.</li>
-          <li>If a feature cannot work offline, it does not ship as a core feature.</li>
-        </ul>
+        <div class="card"><p class="n">01</p><h3>A rule you learn in ten seconds</h3><p>One screen, one mechanic, no tutorial video. If a level needs explaining, the level is wrong, not the player.</p></div>
+        <div class="card"><p class="n">02</p><h3>Offline before anything else</h3><p>No spinner between you and the board. Levels work in a plane, a basement or a dead zone.</p></div>
+        <div class="card"><p class="n">03</p><h3>Fourteen languages, by hand</h3><p>Every menu and store page is written and checked by a person. Machine translation is how a game feels foreign in your own language.</p></div>
       </div>
     </div>
   </section>
 
   <section>
     <div class="wrap">
-      <div class="section-head">
-        <h2>Fourteen languages inside every app</h2>
-        <p class="sub">Store pages, screenshots and in-app text, all localised.</p>
-      </div>
-      <div class="langs">
-        <span>English</span><span>العربية</span><span>Français</span><span>Español</span><span>Deutsch</span><span>日本語</span><span>中文</span><span>한국어</span><span>Русский</span><span>Türkçe</span><span>Italiano</span><span>Português</span><span>हिन्दी</span><span>Indonesia</span>
-      </div>
+      <div class="section-head"><h2>Play in your language</h2><p class="sub">In-app text and store listings, localised.</p></div>
+      <div class="langs"><span>English</span><span>العربية</span><span>Français</span><span>Español</span><span>Deutsch</span><span>日本語</span><span>中文</span><span>한국어</span><span>Русский</span><span>Türkçe</span><span>Italiano</span><span>Português</span><span>हिन्दी</span><span>Indonesia</span></div>
     </div>
   </section>
 
@@ -364,21 +290,18 @@ footer{border-top:1px solid var(--line);padding-block:44px 34px;margin-top:clamp
     <div class="wrap">
       <div class="section-head"><h2>Questions we get</h2></div>
       <div class="faq">
-        <details open><summary>Are your apps really free?</summary><p>Yes. Every app and game is free on Google Play. There is no subscription, no trial timer and no account to create.</p></details>
-        <details><summary>What happens to my data?</summary><p>It stays on your device. MD Work stores workdays, earnings and expenses locally; we do not run a server that keeps a copy of your records.</p></details>
-        <details><summary>Do they work without internet?</summary><p>Yes, MD Work and MD Corpses work with no connection at all. In our newer puzzle games only the optional daily challenge needs a short connection.</p></details>
-        <details><summary>How do I get help?</summary><p>Write to <a href="mailto:mdnexa9@gmail.com">mdnexa9@gmail.com</a> or use the <a href="/support/">support page</a>. Replies come from the studio, usually within two working days.</p></details>
+        <details open><summary>Are the games really free?</summary><p>Yes. Both are free on Google Play, with no subscription, no trial timer and no account.</p></details>
+        <details><summary>Do they work without internet?</summary><p>Every level works with no connection. Only the optional daily board needs a short connection to load, then it plays offline.</p></details>
+        <details><summary>Is there a timer or energy system?</summary><p>No. You can leave a board half-finished and come back to it later; nothing decays while you are away.</p></details>
+        <details><summary>How do I get help?</summary><p>Write to <a href="mailto:mdnexa9@gmail.com">mdnexa9@gmail.com</a> or use the <a href="/support/">support page</a>. Replies come from the studio.</p></details>
       </div>
     </div>
   </section>
 
   <div class="wrap">
     <div class="band">
-      <div>
-        <h2>Start with MD Work</h2>
-        <p>Free on Google Play · Android 8 and newer · your data stays on your phone.</p>
-      </div>
-      <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=app.mdwork.notebook" target="_blank" rel="noopener">Get it on Google Play</a>
+      <div><h2>Start with MD Bolt Master</h2><p>Free on Google Play · Android 8 and newer · 100% offline</p></div>
+      <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.mdnexa.boltmaster" target="_blank" rel="noopener">Get it on Google Play</a>
     </div>
   </div>
 </main>
@@ -388,35 +311,16 @@ footer{border-top:1px solid var(--line);padding-block:44px 34px;margin-top:clamp
     <div class="foot">
       <div class="foot-brand">
         <a class="brand" href="/" aria-label="MD Nexa home" style="margin-bottom:14px">
-          <svg viewBox="0 0 120 120" aria-hidden="true" style="width:28px;height:28px"><rect x="14" y="34" width="24" height="58" rx="12" fill="#4fc3f7"/><rect x="80" y="18" width="24" height="74" rx="12" fill="#7c5bf6"/><g transform="rotate(38 60 56)"><rect x="40" y="32" width="38" height="22" rx="11" fill="#6ea8ff"/></g></svg>
+          <svg viewBox="0 0 120 120" aria-hidden="true" style="width:28px;height:28px;border-radius:7px"><rect width="120" height="120" rx="27" fill="#0a0e1a"/><rect x="22" y="34" width="21" height="52" rx="10.5" fill="#4fc3f7"/><rect x="77" y="22" width="21" height="64" rx="10.5" fill="#7c5bf6"/><g transform="rotate(38 60 56)"><rect x="41" y="35" width="32" height="21" rx="10.5" fill="#6ea8ff"/></g></svg>
           <span class="wm"><b>MD</b> NEXA</span>
         </a>
         <p>Independent Android studio. Simplicity is our strength.</p>
       </div>
-      <div>
-        <h4>Products</h4>
-        <a href="/md-work/">MD Work</a>
-        <a href="/md-corpses/">MD Corpses</a>
-        <a href="/games/">All games</a>
-      </div>
-      <div>
-        <h4>Studio</h4>
-        <a href="/company/">About</a>
-        <a href="/articles/">Notes</a>
-        <a href="/services/">Services</a>
-      </div>
-      <div>
-        <h4>Support</h4>
-        <a href="/support/">Help centre</a>
-        <a href="/privacy/">Privacy policy</a>
-        <a href="mailto:mdnexa9@gmail.com">mdnexa9@gmail.com</a>
-        <a href="/ar/" hreflang="ar" lang="ar">العربية</a>
-      </div>
+      <div><h4>Games</h4><a href="/md-boltmaster/">MD Bolt Master</a><a href="/md-darkflow/">MD Darkflow</a><a href="/games/">All games</a></div>
+      <div><h4>Studio</h4><a href="/articles/">Guides</a><a href="/company/">About</a><a href="/services/">Services</a></div>
+      <div><h4>Support</h4><a href="/support/">Help centre</a><a href="/privacy/">Privacy policy</a><a href="mailto:mdnexa9@gmail.com">mdnexa9@gmail.com</a><a href="/ar/" hreflang="ar" lang="ar">العربية</a></div>
     </div>
-    <div class="bar">
-      <span>© 2026 MD Nexa. All rights reserved.</span>
-      <span>Made for Android.</span>
-    </div>
+    <div class="bar"><span>© 2026 MD Nexa. All rights reserved.</span><span>Made for Android.</span></div>
   </div>
 </footer>
 </body>
