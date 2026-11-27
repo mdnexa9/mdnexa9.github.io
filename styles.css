@@ -921,24 +921,25 @@ a.card-cta:hover { color: #fff; }
     display: flex;
     order: 3;
     width: 100%;
+    flex-wrap: wrap;
     gap: 6px;
-    overflow-x: auto;
-    overscroll-behavior-x: contain;
-    scrollbar-width: none;
-    margin-inline: calc(-1 * clamp(20px, 5vw, 40px));
-    padding-inline: clamp(20px, 5vw, 40px);
+    margin-block-start: 2px;
     padding-block-end: 2px;
-    /* fade both ends so a partially scrolled chip reads as "more", not as clipping */
-    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 16px, #000 calc(100% - 16px), transparent 100%);
-    mask-image: linear-gradient(to right, transparent 0, #000 16px, #000 calc(100% - 16px), transparent 100%);
   }
-  .nav::-webkit-scrollbar { display: none; }
+  /* every section chip stays on screen: two short rows instead of a clipped scroll */
   .nav-link {
     flex: 0 0 auto;
-    font-size: 0.86rem;
-    padding: 7px 11px;
+    font-size: 0.82rem;
+    padding: 6px 10px;
     border: 1px solid var(--line);
     border-radius: 999px;
+    background: rgba(12, 18, 36, 0.55);
+    color: #b9c8e6;
+  }
+  .nav-link[aria-current="page"] {
+    color: var(--text);
+    border-color: rgba(120, 160, 255, 0.45);
+    background: rgba(30, 42, 78, 0.75);
   }
   .nav-link::after { display: none; }
   .nav-link:hover,

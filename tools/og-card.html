@@ -8,77 +8,110 @@
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   * { margin: 0; box-sizing: border-box; }
-  body { width: 1200px; height: 630px; overflow: hidden; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body { background: #05070f; }
   .card {
     position: relative; width: 1200px; height: 630px; overflow: hidden;
     background: #05070f;
     font-family: "Space Grotesk", sans-serif; color: #eaf1ff;
-    padding: 64px 68px; display: flex; gap: 40px;
   }
   .card::before {
     content: ""; position: absolute; inset: 0;
     background:
-      radial-gradient(46% 60% at 92% 0%, rgba(139,92,246,.42), transparent 70%),
-      radial-gradient(50% 55% at 0% 100%, rgba(53,208,245,.22), transparent 70%),
-      linear-gradient(160deg, #070b18 0%, #05070f 55%, #060a15 100%);
+      radial-gradient(38% 52% at 88% -4%, rgba(139,92,246,.40), transparent 68%),
+      radial-gradient(44% 48% at -4% 104%, rgba(53,208,245,.20), transparent 70%),
+      linear-gradient(158deg, #080d1c 0%, #05070f 52%, #070b18 100%);
   }
   .card::after {
     content: ""; position: absolute; inset: 0;
     background-image: radial-gradient(rgba(160,180,255,.22) 1px, transparent 1px);
-    background-size: 34px 34px; opacity: .35;
-    mask-image: radial-gradient(70% 70% at 30% 20%, #000 20%, transparent 80%);
+    background-size: 36px 36px; opacity: .3;
+    -webkit-mask-image: radial-gradient(64% 62% at 26% 22%, #000 12%, transparent 78%);
+    mask-image: radial-gradient(64% 62% at 26% 22%, #000 12%, transparent 78%);
   }
-  .left { position: relative; z-index: 2; width: 690px; display: flex; flex-direction: column; }
-  .brand { display: flex; align-items: center; gap: 16px; }
-  .brand img { width: 64px; height: 64px; }
-  .wm { font-size: 30px; letter-spacing: .18em; display: flex; gap: .38em; align-items: baseline; }
-  .wm span:first-child { font-weight: 400; color: #c8d3ea; }
-  .wm span:last-child { font-weight: 700; }
+  .rule {
+    position: absolute; inset-inline: 0; top: 0; height: 3px; z-index: 3;
+    background: linear-gradient(90deg, #5ee0ff, #4c7cf5 42%, #a274ff 100%);
+  }
+  .inner {
+    position: relative; z-index: 2; height: 100%;
+    padding: 46px 64px 44px; display: flex; flex-direction: column;
+  }
+
+  .top { display: flex; align-items: center; gap: 15px; }
+  .top img { width: 52px; height: 52px; }
+  .wm { font-size: 26px; letter-spacing: .17em; display: flex; gap: .36em; align-items: baseline; }
+  .wm .a { font-weight: 400; color: #c8d3ea; }
+  .wm .b { font-weight: 700; }
+  .url {
+    margin-inline-start: auto; display: inline-flex; align-items: center; gap: 8px;
+    font-size: 16px; font-weight: 500; color: #cfdcf5; letter-spacing: .02em;
+    padding: 8px 16px; border: 1px solid rgba(140,170,255,.26); border-radius: 999px;
+    background: rgba(10,16,32,.66);
+  }
+  .url i { width: 7px; height: 7px; border-radius: 50%; background: #5ee0ff; box-shadow: 0 0 10px #5ee0ff; }
+
+  .main { flex: 1; display: flex; align-items: center; gap: 26px; }
+  .left { width: 700px; }
   .eyebrow {
-    margin-top: 46px; font-size: 15px; font-weight: 500; letter-spacing: .3em;
-    color: #7fe3ff; text-transform: uppercase;
+    font-size: 13.5px; font-weight: 500; letter-spacing: .3em; text-transform: uppercase;
+    color: #7fe3ff;
   }
   h1 {
-    margin-top: 18px; font-size: 74px; line-height: 1.04; font-weight: 700; letter-spacing: -.025em;
-    background: linear-gradient(100deg, #ffffff 10%, #cfe0ff 48%, #a274ff 96%);
+    margin-top: 16px; font-size: 78px; line-height: 1.02; font-weight: 700; letter-spacing: -.03em;
+    background: linear-gradient(102deg, #ffffff 8%, #d3e1ff 46%, #a274ff 98%);
     -webkit-background-clip: text; background-clip: text; color: transparent;
   }
   .ar {
-    margin-top: 16px; font-family: "Cairo", sans-serif; direction: rtl; text-align: right;
-    font-size: 26px; font-weight: 600; color: #b9c8e6; width: 640px;
+    margin-top: 15px; font-family: "Cairo", sans-serif; direction: rtl; text-align: right;
+    font-size: 25px; font-weight: 600; line-height: 1.5; color: #b9c8e6; width: 660px;
   }
-  .pills { margin-top: auto; display: flex; gap: 10px; flex-wrap: wrap; }
-  .pills span {
-    font-size: 16px; font-weight: 500; color: #cbd8f2; padding: 9px 18px;
-    border: 1px solid rgba(140,170,255,.28); border-radius: 999px;
-    background: rgba(12,18,36,.7);
+  .chips { margin-top: 24px; display: flex; gap: 9px; flex-wrap: wrap; }
+  .chips span {
+    font-size: 15px; font-weight: 500; color: #cbd8f2; padding: 8px 16px;
+    border: 1px solid rgba(140,170,255,.26); border-radius: 999px;
+    background: rgba(12,18,36,.72);
   }
-  .right { position: relative; z-index: 2; flex: 1; }
+  .right { position: relative; flex: 1; height: 100%; }
+  .glow {
+    position: absolute; width: 460px; height: 460px; left: 50%; top: 50%;
+    transform: translate(-46%, -50%); border-radius: 50%;
+    background: radial-gradient(circle, rgba(120,110,255,.30), transparent 66%);
+    filter: blur(6px);
+  }
   .phone {
-    position: absolute; width: 210px; border-radius: 26px; padding: 5px;
-    background: linear-gradient(160deg, rgba(255,255,255,.22), rgba(255,255,255,.05));
-    box-shadow: 0 40px 80px -30px rgba(0,0,0,.9);
+    position: absolute; width: 198px; border-radius: 26px; padding: 5px;
+    background: linear-gradient(160deg, rgba(255,255,255,.24), rgba(255,255,255,.05));
+    box-shadow: 0 38px 70px -28px rgba(0,0,0,.92);
   }
   .phone img { width: 100%; display: block; border-radius: 22px; }
-  .p1 { top: 6px; left: -52px; width: 196px; transform: rotate(-7deg); opacity: .9; }
-  .p2 { top: 96px; left: 96px; width: 196px; transform: rotate(4deg); }
+  .p1 { top: 44px; left: -24px; transform: rotate(-7deg); opacity: .92; }
+  .p2 { top: 96px; left: 122px; transform: rotate(4deg); }
 </style>
 </head>
 <body>
   <div class="card">
-    <div class="left">
-      <div class="brand">
+    <div class="rule"></div>
+    <div class="inner">
+      <div class="top">
         <img src="https://mdnexa.online/assets/logo.svg" alt="">
-        <span class="wm"><span>MD</span><span>NEXA</span></span>
+        <span class="wm"><span class="a">MD</span><span class="b">NEXA</span></span>
+        <span class="url"><i></i>mdnexa.online</span>
       </div>
-      <div class="eyebrow">Technology &amp; Software</div>
-      <h1>Simplicity is<br>our strength.</h1>
-      <p class="ar">نبني تطبيقات وألعاباً ومنصات رقمية — بلا تعقيد.</p>
-      <div class="pills"><span>MD Work</span><span>MD Corpses</span><span>mdnexa.online</span></div>
-    </div>
-    <div class="right">
-      <div class="phone p1"><img src="https://mdnexa.online/assets/shots/md-corpses-title.webp" alt=""></div>
-      <div class="phone p2"><img src="https://mdnexa.online/assets/shots/md-work-home.webp" alt=""></div>
+
+      <div class="main">
+        <div class="left">
+          <p class="eyebrow">Independent technology company</p>
+          <h1>Simplicity is<br>our strength.</h1>
+          <p class="ar">نبني تطبيقات وألعاباً ومنصات رقمية — بلا تعقيد.</p>
+          <div class="chips"><span>Android apps</span><span>Original games</span><span>Client platforms</span></div>
+        </div>
+        <div class="right">
+          <div class="glow"></div>
+          <div class="phone p1"><img src="https://mdnexa.online/assets/shots/md-corpses-title.webp" alt=""></div>
+          <div class="phone p2"><img src="https://mdnexa.online/assets/shots/md-work-home.webp" alt=""></div>
+        </div>
+      </div>
     </div>
   </div>
 </body>
