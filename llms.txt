@@ -15,15 +15,18 @@
 - [MD Work page](https://mdnexa.online/md-work/): what the app does, its features and store screenshots.
 - [MD Corpses page](https://mdnexa.online/md-corpses/): how the game plays, its features and store screenshots.
 - [Pay calculation guide](https://mdnexa.online/guide/): how a full day, half day, hourly rate and overtime are calculated, with worked numbers — useful for anyone using MD Work.
+- [Privacy policy](https://mdnexa.online/privacy/): what mdnexa.online and MD Work do with data — records stay on the device, ads by Google AdMob, site analytics.
 
 ## Pages (English)
 
 - [MD Nexa studio, English](https://mdnexa.online/en/): the studio page in English.
 - [MD Work, English](https://mdnexa.online/en/md-work/): the app in English, with features and store screenshots.
 - [MD Corpses, English](https://mdnexa.online/en/md-corpses/): the game in English, with how it plays and store screenshots.
+- [Privacy policy, English](https://mdnexa.online/en/privacy/): the same policy in English, also published in Italian at https://mdnexa.online/it/privacy/.
 
 ## Articles
 
+- [حساب ساعات العمل](https://mdnexa.online/hisab-saat-al-amal/) (Arabic): converting clock-in and clock-out times into paid hours, with the break deducted, minutes as decimals, weekly totals and overtime.
 - [Work hours tracker](https://mdnexa.online/en/work-hours-tracker/): the fields a tracker needs and the one-minute daily routine.
 - [Hourly wage calculator](https://mdnexa.online/en/hourly-wage-calculator/): formulas and worked examples for hours × rate.
 - [Overtime pay calculator](https://mdnexa.online/en/overtime-pay-calculator/): base rate, multiplier and hours, with time-and-a-half examples.

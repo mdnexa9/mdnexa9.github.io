@@ -108,6 +108,24 @@
       "changefreq": "monthly",
       "priority": { "en": "0.7" },
       "alternates": { "en": "/en/work-time-record/" }
+    },
+    {
+      "key": "work-hours-calculation",
+      "lastmod": "2026-11-27",
+      "changefreq": "monthly",
+      "priority": { "ar": "0.7" },
+      "alternates": { "ar": "/hisab-saat-al-amal/" }
+    },
+    {
+      "key": "privacy",
+      "lastmod": "2026-11-27",
+      "changefreq": "yearly",
+      "priority": { "ar": "0.3", "en": "0.3", "it": "0.3" },
+      "alternates": {
+        "ar": "/privacy/",
+        "en": "/en/privacy/",
+        "it": "/it/privacy/"
+      }
     }
   ]
 }
