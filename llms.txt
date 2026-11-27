@@ -53,3 +53,8 @@
 - WhatsApp: +39 376 144 3811
 - Email: mdnexa9@gmail.com
 - Developer page: https://play.google.com/store/apps/developer?id=MD+Nexa
+
+## Games
+- MD Darkflow: https://mdnexa.online/md-darkflow/ (Play: https://play.google.com/store/apps/details?id=com.mdnexa.Darkflow)
+- MD Bolt Master: https://mdnexa.online/md-boltmaster/ (Play: https://play.google.com/store/apps/details?id=com.mdnexa.boltmaster)
+- Games hub and guides: https://mdnexa.online/games/
