@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; box-sizing: border-box; }
+  body { width: 1200px; height: 630px; overflow: hidden; }
+  .card {
+    position: relative; width: 1200px; height: 630px; overflow: hidden;
+    background: #05070f;
+    font-family: "Space Grotesk", sans-serif; color: #eaf1ff;
+    padding: 64px 68px; display: flex; gap: 40px;
+  }
+  .card::before {
+    content: ""; position: absolute; inset: 0;
+    background:
+      radial-gradient(46% 60% at 92% 0%, rgba(139,92,246,.42), transparent 70%),
+      radial-gradient(50% 55% at 0% 100%, rgba(53,208,245,.22), transparent 70%),
+      linear-gradient(160deg, #070b18 0%, #05070f 55%, #060a15 100%);
+  }
+  .card::after {
+    content: ""; position: absolute; inset: 0;
+    background-image: radial-gradient(rgba(160,180,255,.22) 1px, transparent 1px);
+    background-size: 34px 34px; opacity: .35;
+    mask-image: radial-gradient(70% 70% at 30% 20%, #000 20%, transparent 80%);
+  }
+  .left { position: relative; z-index: 2; width: 690px; display: flex; flex-direction: column; }
+  .brand { display: flex; align-items: center; gap: 16px; }
+  .brand img { width: 64px; height: 64px; }
+  .wm { font-size: 30px; letter-spacing: .18em; display: flex; gap: .38em; align-items: baseline; }
+  .wm span:first-child { font-weight: 400; color: #c8d3ea; }
+  .wm span:last-child { font-weight: 700; }
+  .eyebrow {
+    margin-top: 46px; font-size: 15px; font-weight: 500; letter-spacing: .3em;
+    color: #7fe3ff; text-transform: uppercase;
+  }
+  h1 {
+    margin-top: 18px; font-size: 74px; line-height: 1.04; font-weight: 700; letter-spacing: -.025em;
+    background: linear-gradient(100deg, #ffffff 10%, #cfe0ff 48%, #a274ff 96%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .ar {
+    margin-top: 16px; font-family: "Cairo", sans-serif; direction: rtl; text-align: right;
+    font-size: 26px; font-weight: 600; color: #b9c8e6; width: 640px;
+  }
+  .pills { margin-top: auto; display: flex; gap: 10px; flex-wrap: wrap; }
+  .pills span {
+    font-size: 16px; font-weight: 500; color: #cbd8f2; padding: 9px 18px;
+    border: 1px solid rgba(140,170,255,.28); border-radius: 999px;
+    background: rgba(12,18,36,.7);
+  }
+  .right { position: relative; z-index: 2; flex: 1; }
+  .phone {
+    position: absolute; width: 210px; border-radius: 26px; padding: 5px;
+    background: linear-gradient(160deg, rgba(255,255,255,.22), rgba(255,255,255,.05));
+    box-shadow: 0 40px 80px -30px rgba(0,0,0,.9);
+  }
+  .phone img { width: 100%; display: block; border-radius: 22px; }
+  .p1 { top: -6px; left: -18px; transform: rotate(-7deg); opacity: .9; }
+  .p2 { top: 84px; left: 118px; transform: rotate(4deg); }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="left">
+      <div class="brand">
+        <img src="https://mdnexa.online/assets/logo.svg" alt="">
+        <span class="wm"><span>MD</span><span>NEXA</span></span>
+      </div>
+      <div class="eyebrow">Technology &amp; Software</div>
+      <h1>Simplicity is<br>our strength.</h1>
+      <p class="ar">تطبيقات وألعاب ومنصات رقمية — نبنيها بسيطة، وننشرها لتعمل.</p>
+      <div class="pills"><span>MD Work</span><span>MD Corpses</span><span>mdnexa.online</span></div>
+    </div>
+    <div class="right">
+      <div class="phone p1"><img src="https://mdnexa.online/assets/shots/md-corpses-title.webp" alt=""></div>
+      <div class="phone p2"><img src="https://mdnexa.online/assets/shots/md-work-home.webp" alt=""></div>
+    </div>
+  </div>
+</body>
+</html>
