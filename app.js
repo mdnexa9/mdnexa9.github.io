@@ -40,12 +40,12 @@
   };
 
   const TITLES = {
-    ar: "MD Nexa — تطبيقات وألعاب أندرويد | MD Work و MD Corpses",
-    en: "MD Nexa — Android apps & games | MD Work & MD Corpses",
+    ar: "MD NEXA — شركة برمجيات | تطبيقات وألعاب ومنصّات رقمية",
+    en: "MD NEXA — Software Company | Apps, Games & Digital Platforms",
   };
   const DESCRIPTIONS = {
-    ar: "MD Nexa (مك نكسا) استوديو أندرويد مستقل. حمّل MD Work لتنظيم أيام العمل والأرباح والمصاريف، والعب MD Corpses على Google Play. تطبيقات وألعاب بالعربية والإنجليزية.",
-    en: "MD Nexa is an independent Android studio. Get MD Work to track workdays, earnings and expenses, and play MD Corpses on Google Play. Apps and games in Arabic and English.",
+    ar: "MD Nexa (مك نكسا) شركة برمجيات مستقلة تبني تطبيقات وألعاباً ومنصّات رقمية بسيطة. MD Work وMD Corpses على Google Play، بالعربية والإنجليزية.",
+    en: "MD Nexa is an independent software company building simple apps, games and digital platforms. MD Work and MD Corpses are free on Google Play.",
   };
 
   /* ---------------- Language ---------------- */

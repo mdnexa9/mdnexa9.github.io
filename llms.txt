@@ -1,6 +1,6 @@
 # MD Nexa
 
-> MD Nexa (مك نكسا) is an independent Android studio. It builds small, fast apps and games and publishes them on Google Play in Arabic and English. No accounts, no subscriptions.
+> MD Nexa (مك نكسا) is an independent software company. It builds small, fast apps, games and digital platforms and publishes them on Google Play in Arabic and English. No accounts, no subscriptions.
 
 ## Products
 

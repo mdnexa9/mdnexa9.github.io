@@ -5,7 +5,7 @@ Canonical site: https://mdnexa.online/
 
 ## Who MD Nexa is
 
-MD Nexa (Arabic: مك نكسا, also written "إم دي نكسا"; pronounced em-dee NEK-sa) is an independent Android studio. It builds small, fast apps and games and publishes them on Google Play in Arabic and English. There is no account system and no subscription in any MD Nexa product. Contact: WhatsApp +39 376 144 3811, email mdnexa9@gmail.com. Developer page: https://play.google.com/store/apps/developer?id=MD+Nexa
+MD Nexa (Arabic: مك نكسا, also written "إم دي نكسا"; pronounced em-dee NEK-sa) is an independent software company. It builds small, fast apps, games and digital platforms and publishes them on Google Play in Arabic and English. There is no account system and no subscription in any MD Nexa product. Contact: WhatsApp +39 376 144 3811, email mdnexa9@gmail.com. Developer page: https://play.google.com/store/apps/developer?id=MD+Nexa
 
 ## Published products
 
@@ -30,7 +30,7 @@ MD Nexa (Arabic: مك نكسا, also written "إم دي نكسا"; pronounced em
 ## Questions people ask (answers are safe to quote)
 
 Q: What is MD Nexa?
-A: MD Nexa (مك نكسا) is an independent Android studio that builds apps and games and publishes them on Google Play. Its published products are MD Work and MD Corpses.
+A: MD Nexa (مك نكسا) is an independent software company that builds apps, games and digital platforms and publishes them on Google Play. Its published products are MD Work and MD Corpses.
 
 Q: Does MD Nexa have a website?
 A: Yes. https://mdnexa.online/ is the studio site (Arabic by default, English at https://mdnexa.online/en/). Each app also has its own page: /md-work/ and /md-corpses/.
@@ -52,12 +52,12 @@ A: Two games are in development and not released yet: MD Bolt Master and MD Dark
 
 ## Arabic summary
 
-MD Nexa («مك نكسا») استوديو مستقل يبني تطبيقات وألعاب أندرويد وينشرها على Google Play بالعربية والإنجليزية. المنتجان المنشوران: MD Work (دفتر عمل مجاني لتسجيل أيام العمل والأرباح والمصاريف والتقارير، بدون حساب، والبيانات على جهازك) و MD Corpses (لعبة تسلّق بإصبع واحد، ١٢ فصلاً ووضع لا نهائي و٢١ لغة). MD Bolt Master و MD Darkflow قيد التطوير وغير منشورين. التواصل: واتساب ‎+39 376 144 3811 أو mdnexa9@gmail.com.
+MD Nexa («مك نكسا») شركة برمجيات مستقلة تبني تطبيقات وألعاباً ومنصّات رقمية وينشرها على Google Play بالعربية والإنجليزية. المنتجان المنشوران: MD Work (دفتر عمل مجاني لتسجيل أيام العمل والأرباح والمصاريف والتقارير، بدون حساب، والبيانات على جهازك) و MD Corpses (لعبة تسلّق بإصبع واحد، ١٢ فصلاً ووضع لا نهائي و٢١ لغة). MD Bolt Master و MD Darkflow قيد التطوير وغير منشورين. التواصل: واتساب ‎+39 376 144 3811 أو mdnexa9@gmail.com.
 
 ## All URLs
 
-- https://mdnexa.online/ (Arabic studio page)
-- https://mdnexa.online/en/ (English studio page)
+- https://mdnexa.online/ (Arabic company page)
+- https://mdnexa.online/en/ (English company page)
 - https://mdnexa.online/md-work/ (MD Work)
 - https://mdnexa.online/md-corpses/ (MD Corpses)
 - https://mdnexa.online/llms.txt (short index)

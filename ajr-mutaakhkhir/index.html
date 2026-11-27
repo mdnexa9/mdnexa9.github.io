@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=16">
+  <link rel="stylesheet" href="/styles.css?v=17">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="MD Nexa">
   <meta property="og:url" content="https://mdnexa.online/ajr-mutaakhkhir/">
@@ -35,10 +35,10 @@
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="MD Nexa — شركة تقنية مستقلة">
+  <meta property="og:image:alt" content="MD Nexa — شركة برمجيات مستقلة">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://mdnexa.online/assets/og-cover.jpg">
-  <meta name="twitter:image:alt" content="MD Nexa — شركة تقنية مستقلة">
+  <meta name="twitter:image:alt" content="MD Nexa — شركة برمجيات مستقلة">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -208,35 +208,57 @@
     </section>
   </main>
 
-  <footer class="site-foot">
+    <footer class="site-foot">
     <div class="wrap foot-in">
       <div class="foot-brand">
         <a class="brand" href="/" aria-label="MD Nexa">
           <img src="/assets/logo.svg" alt="" width="34" height="34">
           <span class="wordmark"><span class="wm-light">MD</span><span class="wm-bold">NEXA</span></span>
         </a>
-        <p>استوديو مستقل يبني تطبيقات وألعابًا لأندرويد.</p>
+        <p data-en="An independent software company. Simplicity is our strength.">شركة برمجيات مستقلة. البساطة قوّتنا.</p>
+        <p class="foot-social" dir="ltr">
+          <a href="https://www.facebook.com/p/MD-Nexa-61596090351733" target="_blank" rel="me noopener">Facebook</a>
+          <a href="https://www.tiktok.com/@mdnexa.studio" target="_blank" rel="me noopener">TikTok</a>
+          <a href="https://www.youtube.com/@mdnexa.studio" target="_blank" rel="me noopener">YouTube</a>
+          <a href="https://www.instagram.com/mdnexa.studio/" target="_blank" rel="me noopener">Instagram</a>
+        </p>
       </div>
-      <nav class="foot-nav" aria-label="روابط">
-        <a href="/articles/">المقالات</a>
-        <a href="/work-hours/">سجل الساعات</a>
-        <a href="/guide/">دليل الحساب</a>
-        <a href="/md-work/">MD Work</a>
-        <a href="/md-corpses/">MD Corpses</a>
-        <a href="/en/articles/">English</a>
-        <a href="/privacy/">سياسة الخصوصية</a>
-        <a href="/#contact">تواصل</a>
-              <a href="/company/">الشركة</a>
-        <a href="/support/">الدعم</a>
-              <a href="/services/">الخدمات</a>
+
+      <nav class="foot-col" aria-labelledby="footProducts">
+        <h4 id="footProducts" data-en="Products">المنتجات</h4>
+        <ul>
+          <li><a href="/#products" data-open-tab="apps"><span data-en="Apps">التطبيقات</span></a></li>
+          <li><a href="/#products" data-open-tab="games"><span data-en="Games">الألعاب</span></a></li>
+          <li><a href="/md-work/"><span data-en="MD Work page">صفحة MD Work</span></a></li>
+          <li><a href="/md-corpses/"><span data-en="MD Corpses page">صفحة MD Corpses</span></a></li>
+          <li><a href="/#gallery"><span data-en="Store screenshots">لقطات المتجر</span></a></li>
+        </ul>
       </nav>
-      <p class="foot-social" dir="ltr" style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:14px;font-size:14px">
-        <a href="https://www.facebook.com/p/MD-Nexa-61596090351733" target="_blank" rel="me noopener">Facebook</a>
-        <a href="https://www.tiktok.com/@mdnexa.studio" target="_blank" rel="me noopener">TikTok</a>
-        <a href="https://www.youtube.com/@mdnexa.studio" target="_blank" rel="me noopener">YouTube</a>
-        <a href="https://www.instagram.com/mdnexa.studio/" target="_blank" rel="me noopener">Instagram</a>
-      </p>
-      <p class="copy" dir="ltr">© <span>2026</span> MD Nexa · mdnexa.online</p>
+
+      <nav class="foot-col" aria-labelledby="footCompany">
+        <h4 id="footCompany" data-en="Company">الشركة</h4>
+        <ul>
+          <li><a href="/company/"><span data-en="About us">من نحن</span></a></li>
+          <li><a href="/services/"><span data-en="Services">الخدمات</span></a></li>
+          <li><a href="/articles/"><span data-en="Articles">المقالات</span></a></li>
+        </ul>
+      </nav>
+
+      <nav class="foot-col" aria-labelledby="footSupport">
+        <h4 id="footSupport" data-en="Support">الدعم</h4>
+        <ul>
+          <li><a href="/support/"><span data-en="Help centre">مركز المساعدة</span></a></li>
+          <li><a href="/#contact"><span data-en="Contact">تواصل</span></a></li>
+          <li><a href="mailto:mdnexa9@gmail.com">mdnexa9@gmail.com</a></li>
+          <li><a href="/privacy/"><span data-en="Privacy policy">سياسة الخصوصية</span></a></li>
+          <li><a href="/app-ads.txt">app-ads.txt</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="wrap foot-bar">
+      <p class="copy">© <span id="year">2026</span> MD Nexa · mdnexa.online</p>
+      <p class="copy" dir="ltr">MD NEXA — SOFTWARE COMPANY</p>
     </div>
   </footer>
 <script>

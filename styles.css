@@ -1080,3 +1080,282 @@ a.card-cta:hover { color: #fff; }
     transition-duration: 0.001ms !important;
   }
 }
+
+/* ==========================================================================
+   Homepage 2026 — one ink base, one gold accent, hard edges.
+   Loaded last so it wins over the earlier component styles.
+   ========================================================================== */
+
+:root {
+  --gold: #f2c66d;
+  --text-strong: #f8fbff;
+  --line-soft: rgba(148, 163, 184, 0.12);
+}
+
+/* a calmer backdrop: less haze behind the type, more contrast */
+body::before {
+  background:
+    radial-gradient(50% 42% at 94% -12%, rgba(120, 90, 255, 0.2), transparent 62%),
+    radial-gradient(40% 38% at 2% 20%, rgba(53, 208, 245, 0.11), transparent 62%),
+    linear-gradient(180deg, #05070f 0%, #06080f 55%, #05070f 100%);
+}
+.stars { opacity: 0.3; }
+
+/* ---------- Hero ---------- */
+
+.hero { padding-block: clamp(30px, 4.6vw, 76px) 0; }
+
+.hero-grid {
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  gap: clamp(26px, 4vw, 56px);
+  align-items: center;
+}
+
+.hero-title {
+  font-size: clamp(2.45rem, 4.9vw, 4.15rem);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  color: var(--text-strong);
+  margin-block-end: 0;
+}
+[lang="ar"] .hero-title { line-height: 1.24; letter-spacing: -0.01em; }
+
+/* the signature: one short gradient rule under the statement */
+.hero-title::after {
+  content: "";
+  display: block;
+  width: clamp(64px, 8vw, 96px);
+  height: 4px;
+  margin-block: 26px 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #5ee0ff, #7c8cff 55%, #a274ff);
+}
+
+.hero-claim {
+  font-family: var(--font);
+  font-size: clamp(0.76rem, 1.1vw, 0.86rem);
+  font-weight: 500;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: #8ea3c6;
+  margin-block: 18px 16px;
+}
+
+.hero-sub {
+  max-width: 46ch;
+  color: #a9b6cf;
+  font-size: clamp(0.97rem, 1.25vw, 1.05rem);
+  line-height: 1.85;
+  margin-block-end: 26px;
+}
+
+/* a white CTA is the strongest contrast on this page */
+.btn-primary {
+  background: #f4f8ff;
+  color: #05080f;
+  box-shadow: 0 18px 44px -26px rgba(160, 200, 255, 0.9);
+}
+.btn-primary:hover {
+  background: #ffffff;
+  box-shadow: 0 24px 54px -26px rgba(160, 200, 255, 0.95);
+}
+.btn-outline { background: transparent; border-color: rgba(162, 182, 224, 0.26); }
+
+.chips { font-size: 0.74rem; color: #8d9cb9; }
+.chips li { background: transparent; border-color: var(--line-soft); }
+
+/* ---------- Hero stage ---------- */
+
+.hero-visual { gap: 0; }
+
+.phone {
+  width: min(46%, 218px);
+  border-radius: 30px;
+  padding: 6px;
+  border-color: rgba(162, 182, 224, 0.2);
+  box-shadow: 0 50px 90px -52px #000;
+}
+.phone--left {
+  transform: rotate(-4deg) translateY(16px);
+  margin-inline-end: -14%;
+  z-index: 2;
+}
+.phone--right { transform: rotate(4deg) translateY(-16px); z-index: 1; }
+
+.stage-tag {
+  position: absolute;
+  z-index: 3;
+  font-family: var(--font);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #d6e6ff;
+  background: rgba(9, 13, 22, 0.94);
+  border: 1px solid rgba(162, 182, 224, 0.24);
+  border-radius: 999px;
+  padding: 7px 13px;
+}
+.stage-tag--a { inset-block-start: 2%; inset-inline-start: 1%; }
+.stage-tag--b { inset-block-end: 2%; inset-inline-end: 1%; }
+
+/* ---------- Proof band ---------- */
+
+.proof {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  margin-block-start: clamp(30px, 4.5vw, 58px);
+  border: 1px solid var(--line-soft);
+  border-radius: 20px;
+  background: var(--line-soft);
+  overflow: hidden;
+}
+.proof li {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px clamp(14px, 2vw, 24px);
+  background: #080c15;
+}
+.proof b {
+  font-family: var(--font);
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: var(--gold);
+}
+.proof span { font-size: 0.82rem; color: #97a5c0; }
+
+/* ---------- Section rhythm ---------- */
+
+.products,
+.showcase,
+.about,
+.contact {
+  border-block-start: 1px solid rgba(148, 163, 184, 0.1);
+  padding-block: clamp(52px, 6.5vw, 92px);
+}
+
+.section-head { max-width: 780px; margin-block-end: clamp(26px, 3vw, 40px); }
+
+.section-title {
+  font-size: clamp(1.7rem, 3.1vw, 2.5rem);
+  line-height: 1.16;
+  letter-spacing: -0.03em;
+}
+[lang="ar"] .section-title { line-height: 1.36; letter-spacing: -0.01em; }
+
+.eyebrow {
+  font-family: var(--font);
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8b9cbb;
+  margin-block-end: 14px;
+}
+.eyebrow .num { color: var(--gold); font-weight: 700; letter-spacing: 0.1em; }
+
+/* ---------- Cards: flat panels, hairline borders ---------- */
+
+.card {
+  border-radius: 18px;
+  padding: 22px;
+  background: #0a0e18;
+  border-color: rgba(148, 163, 184, 0.14);
+}
+a.card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(94, 224, 255, 0.34);
+}
+.card-name { font-size: 1.22rem; }
+
+/* pillar index numerals read as a ledger, not as badges */
+#pillars .card .pill {
+  font-family: var(--font);
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--gold);
+  background: none;
+  border: 0;
+  padding: 0;
+}
+
+.tabs { border-radius: 14px; background: #0a0e18; }
+.tab { border-radius: 10px; }
+
+/* ---------- Footer ---------- */
+
+.site-foot {
+  background: #060810;
+  border-block-start: 1px solid var(--line);
+}
+
+/* the four-column footer; pages still on the older link list keep their own grid */
+.site-foot:has(.foot-col) { padding-block: 0; }
+
+.foot-in:has(.foot-col) {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: clamp(24px, 3.5vw, 52px);
+  padding-block: clamp(40px, 5vw, 64px) clamp(30px, 4vw, 48px);
+}
+
+.foot-brand p { color: #93a1bd; font-size: 0.9rem; max-width: 30ch; margin-block-start: 14px; }
+
+.foot-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-block-start: 18px;
+  font-size: 0.85rem;
+}
+.foot-social a { color: #93a1bd; text-decoration: none; }
+.foot-social a:hover { color: #fff; }
+
+.foot-col h4 {
+  font-family: var(--font);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #7f90b0;
+  margin: 0 0 16px;
+}
+.foot-col ul { display: grid; gap: 11px; font-size: 0.92rem; }
+.foot-col a { color: #adbacf; text-decoration: none; }
+.foot-col a:hover { color: #fff; }
+
+.foot-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-block: 20px;
+  border-block-start: 1px solid rgba(148, 163, 184, 0.12);
+}
+.foot-bar .copy { color: #75839f; }
+
+@media (max-width: 960px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 34px; }
+  .hero-visual { max-width: 420px; margin-inline: auto; order: 2; }
+  .proof { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .foot-in:has(.foot-col) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .foot-brand { grid-column: 1 / -1; }
+}
+
+@media (max-width: 560px) {
+  .hero-title { font-size: clamp(2.1rem, 9.6vw, 2.7rem); }
+  .hero-title::after { margin-block-start: 18px; height: 3px; }
+  .hero-claim { letter-spacing: 0.18em; }
+  .stage-tag { font-size: 0.6rem; padding: 5px 10px; letter-spacing: 0.1em; }
+  .proof li { padding: 16px 14px; }
+  .proof b { font-size: 1.45rem; }
+  .foot-in:has(.foot-col) { gap: 26px 20px; }
+  .foot-brand { grid-column: 1 / -1; }
+  .foot-bar { flex-direction: column; align-items: flex-start; }
+}
