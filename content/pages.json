@@ -187,6 +187,32 @@
       }
     },
     {
+      "key": "company",
+      "lastmod": "2026-11-27",
+      "changefreq": "monthly",
+      "priority": {
+        "ar": "0.7",
+        "en": "0.7"
+      },
+      "alternates": {
+        "ar": "/company/",
+        "en": "/en/company/"
+      }
+    },
+    {
+      "key": "support",
+      "lastmod": "2026-11-27",
+      "changefreq": "monthly",
+      "priority": {
+        "ar": "0.6",
+        "en": "0.6"
+      },
+      "alternates": {
+        "ar": "/support/",
+        "en": "/en/support/"
+      }
+    },
+    {
       "key": "privacy",
       "lastmod": "2026-11-27",
       "changefreq": "yearly",

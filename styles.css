@@ -611,6 +611,10 @@ button.card:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px;
 }
 .card-cta .arrow { width: 16px; height: 16px; color: var(--cyan); }
 
+.card a.card-cta,
+.card-cta { text-decoration: none; }
+a.card-cta:hover { color: #fff; }
+
 .card-note {
   font-family: var(--font);
   font-size: 0.72rem;

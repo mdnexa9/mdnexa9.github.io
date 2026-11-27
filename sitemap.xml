@@ -217,6 +217,42 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mdnexa.online/hisab-saat-al-amal/"/>
   </url>
   <url>
+    <loc>https://mdnexa.online/company/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mdnexa.online/company/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mdnexa.online/en/company/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdnexa.online/company/"/>
+  </url>
+  <url>
+    <loc>https://mdnexa.online/en/company/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mdnexa.online/company/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mdnexa.online/en/company/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdnexa.online/company/"/>
+  </url>
+  <url>
+    <loc>https://mdnexa.online/support/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mdnexa.online/support/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mdnexa.online/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdnexa.online/support/"/>
+  </url>
+  <url>
+    <loc>https://mdnexa.online/en/support/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mdnexa.online/support/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mdnexa.online/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mdnexa.online/support/"/>
+  </url>
+  <url>
     <loc>https://mdnexa.online/privacy/</loc>
     <lastmod>2026-11-27</lastmod>
     <changefreq>yearly</changefreq>
