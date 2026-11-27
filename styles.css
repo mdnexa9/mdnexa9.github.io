@@ -975,6 +975,9 @@ a.card-cta:hover { color: #fff; }
   .nav-link:hover,
   .nav-link:focus-visible { border-color: rgba(120, 160, 255, 0.45); }
   .head-cta { display: none; }
+  /* guide tables read as small two-line cells instead of a sideways scroll */
+  .data-table th,
+  .data-table td { white-space: normal; padding: 8px 10px; font-size: 0.84rem; }
   .foot-in { grid-template-columns: 1fr; }
   .copy { white-space: normal; }
   .tabs { display: flex; width: 100%; }
