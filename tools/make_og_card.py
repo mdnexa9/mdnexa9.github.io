@@ -1,23 +1,21 @@
 #!/usr/bin/env python3
 """Build assets/og-card.png, the 1200x630 social preview card for MD Nexa.
 
-The card reproduces the brand identity used on the site: the dark navy canvas,
-the "N" mark in the cyan-to-violet gradient (same geometry as assets/logo.svg)
-and the MD NEXA wordmark in Space Grotesk.
+The card is the brand logo itself, enlarged: the navy canvas of the logo, the
+"N" mark in the cyan-to-violet gradient (same geometry as assets/logo.svg) and
+the MD NEXA wordmark in Space Grotesk, with the same soft light behind the mark.
 
     python3 tools/make_og_card.py                  # writes assets/og-card.png
     python3 tools/make_og_card.py --out /tmp/x.png # write somewhere else
 
 Needs Pillow (pip install pillow) and the Space Grotesk variable font. Point
-FONT_PATH at a SpaceGrotesk[wght].ttf, or drop one in /tmp/fonts/. Only the card
-is touched; no page is rewritten.
+FONT_CANDIDATES at a SpaceGrotesk[wght].ttf, or drop one in /tmp/fonts/. Only
+the card is touched; no page is rewritten.
 """
 from __future__ import annotations
 
 import argparse
-import math
 import pathlib
-import random
 
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
@@ -25,12 +23,11 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "assets" / "og-card.png"
 
 W, H = 1200, 630
-BG = (5, 7, 15)
+BG = (8, 12, 26)
 CYAN = (94, 224, 255)
 BLUE = (76, 124, 245)
 MID_BLUE = (74, 168, 240)
 VIOLET = (162, 116, 255)
-SOFT = (147, 160, 192)
 
 FONT_CANDIDATES = (
     "/tmp/fonts/SpaceGrotesk-var.ttf",
@@ -128,75 +125,37 @@ def draw_mark(size: int) -> Image.Image:
 def build(out: pathlib.Path) -> None:
     card = Image.new("RGBA", (W, H), BG + (255,))
 
-    # Light: cyan from the upper left, violet from the lower right.
-    card.alpha_composite(glow((W, H), (250, 120), 620, CYAN, 42))
-    card.alpha_composite(glow((W, H), (980, 540), 620, VIOLET, 58))
-    card.alpha_composite(glow((W, H), (600, 300), 420, (60, 80, 180), 30))
+    # The same soft light the logo sits on: cyan upper left, violet lower right.
+    card.alpha_composite(glow((W, H), (330, 180), 620, CYAN, 34))
+    card.alpha_composite(glow((W, H), (900, 470), 620, VIOLET, 44))
 
-    # The faint star field used across the site.
-    rnd = random.Random(20261126)
-    stars = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    sd = ImageDraw.Draw(stars)
-    for _ in range(150):
-        x, y = rnd.uniform(0, W), rnd.uniform(0, H)
-        r = rnd.choice((1, 1, 1, 2))
-        a = rnd.randint(18, 70)
-        sd.ellipse([x, y, x + r, y + r], fill=(200, 220, 255, a))
-    card.alpha_composite(stars)
+    # Logo: mark above the wordmark, centred, at logo proportions.
+    mark = draw_mark(232)
+    word_size = 104
+    light = load_font(word_size, 300)
+    bold = load_font(word_size, 700)
+    gap = 26
 
-    # Vignette to keep the centre readable.
-    vign = Image.new("L", (W, H), 0)
-    ImageDraw.Draw(vign).ellipse([-180, -260, W + 180, H + 260], fill=255)
-    vign = vign.filter(ImageFilter.GaussianBlur(140))
-    dark = Image.new("RGBA", (W, H), (0, 0, 0, 120))
-    card = Image.composite(card, Image.alpha_composite(card, dark), vign)
+    probe = ImageDraw.Draw(card)
+    w_md = probe.textlength("MD", font=light)
+    w_nexa = probe.textlength("NEXA", font=bold)
+    word_w = w_md + gap + w_nexa
+    word_h = word_size
 
-    # Mark, with a soft halo behind it.
-    mark = draw_mark(196)
+    block_h = mark.height + 40 + word_h
+    top = (H - block_h) // 2
+
     mx = (W - mark.width) // 2
-    my = 74
-    halo = glow((W, H), (W // 2, my + mark.height // 2), 300, (110, 120, 255), 46)
-    card.alpha_composite(halo)
-    card.alpha_composite(mark, (mx, my))
+    card.alpha_composite(glow((W, H), (W // 2, top + mark.height // 2), 300,
+                              (110, 120, 255), 40))
+    card.alpha_composite(mark, (mx, top))
 
     draw = ImageDraw.Draw(card)
-
-    # Wordmark: MD in Light, NEXA in Bold, as on the site.
-    y = my + mark.height + 34
-    light = load_font(88, 300)
-    bold = load_font(88, 700)
-    md = "MD"
-    nexa = "NEXA"
-    gap = 22
-    w_md = draw.textlength(md, font=light)
-    w_nexa = draw.textlength(nexa, font=bold)
-    x = (W - (w_md + gap + w_nexa)) / 2
-    draw.text((x, y), md, font=light, fill=(226, 232, 245), anchor="la")
-    draw.text((x + w_md + gap, y), nexa, font=bold, fill=(255, 255, 255), anchor="la")
-
-    # Gradient rule.
-    rule_y = y + 128
-    rule_w = 132
-    rule = vertical_gradient((1, 4), CYAN, VIOLET).resize((rule_w, 4), Image.BILINEAR)
-    card.alpha_composite(rule.convert("RGBA"), ((W - rule_w) // 2, rule_y))
-
-    # Tagline and domain.
-    small = load_font(30, 500)
-    draw.text(
-        (W // 2, rule_y + 46),
-        "Android apps & games",
-        font=small,
-        fill=SOFT,
-        anchor="ma",
-    )
-    domain_font = load_font(30, 700)
-    draw.text(
-        (W // 2, rule_y + 92),
-        "mdnexa.online",
-        font=domain_font,
-        fill=(150, 200, 255),
-        anchor="ma",
-    )
+    x = (W - word_w) / 2
+    y = top + mark.height + 40
+    draw.text((x, y), "MD", font=light, fill=(226, 232, 245), anchor="la")
+    draw.text((x + w_md + gap, y), "NEXA", font=bold, fill=(255, 255, 255),
+              anchor="la")
 
     out.parent.mkdir(parents=True, exist_ok=True)
     card.convert("RGB").save(out, "PNG", optimize=True)

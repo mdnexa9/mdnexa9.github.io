@@ -82,6 +82,27 @@
       "alternates": { "en": "/en/unpaid-wages/" }
     },
     {
+      "key": "overtime-pay-calculator",
+      "lastmod": "2026-11-27",
+      "changefreq": "monthly",
+      "priority": { "en": "0.7" },
+      "alternates": { "en": "/en/overtime-pay-calculator/" }
+    },
+    {
+      "key": "day-rate-vs-hourly-rate",
+      "lastmod": "2026-11-27",
+      "changefreq": "monthly",
+      "priority": { "en": "0.7" },
+      "alternates": { "en": "/en/day-rate-vs-hourly-rate/" }
+    },
+    {
+      "key": "hourly-pay-italian",
+      "lastmod": "2026-11-27",
+      "changefreq": "monthly",
+      "priority": { "it": "0.7" },
+      "alternates": { "it": "/it/paga-oraria/" }
+    },
+    {
       "key": "work-time-record",
       "lastmod": "2026-11-26",
       "changefreq": "monthly",

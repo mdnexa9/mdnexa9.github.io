@@ -22,6 +22,15 @@
 - [MD Work, English](https://mdnexa.online/en/md-work/): the app in English, with features and store screenshots.
 - [MD Corpses, English](https://mdnexa.online/en/md-corpses/): the game in English, with how it plays and store screenshots.
 
+## Articles
+
+- [Work hours tracker](https://mdnexa.online/en/work-hours-tracker/): the fields a tracker needs and the one-minute daily routine.
+- [Hourly wage calculator](https://mdnexa.online/en/hourly-wage-calculator/): formulas and worked examples for hours × rate.
+- [Overtime pay calculator](https://mdnexa.online/en/overtime-pay-calculator/): base rate, multiplier and hours, with time-and-a-half examples.
+- [Day rate or hourly rate](https://mdnexa.online/en/day-rate-vs-hourly-rate/): converting one into the other and the break-even hours.
+- [Unpaid wages](https://mdnexa.online/en/unpaid-wages/): what to do when pay is late.
+- [Registro ore lavorate](https://mdnexa.online/it/registro-ore-lavorate/) · [Paga oraria](https://mdnexa.online/it/paga-oraria/) · [Ore non pagate](https://mdnexa.online/it/ore-non-pagate/) (Italian).
+
 ## Reference
 
 - [Full text for assistants](https://mdnexa.online/llms-full.txt): every product fact and answer in one file.
