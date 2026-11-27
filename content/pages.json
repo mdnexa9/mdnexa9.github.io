@@ -7,42 +7,76 @@
       "key": "home",
       "lastmod": "2026-11-23",
       "changefreq": "weekly",
-      "priority": { "ar": "1.0", "en": "0.9" },
-      "alternates": { "ar": "/", "en": "/en/" }
+      "priority": {
+        "ar": "1.0",
+        "en": "0.9"
+      },
+      "alternates": {
+        "ar": "/",
+        "en": "/en/"
+      }
     },
     {
       "key": "md-work",
       "lastmod": "2026-11-23",
       "changefreq": "monthly",
-      "priority": { "ar": "0.9", "en": "0.8" },
-      "alternates": { "ar": "/md-work/", "en": "/en/md-work/" }
+      "priority": {
+        "ar": "0.9",
+        "en": "0.8"
+      },
+      "alternates": {
+        "ar": "/md-work/",
+        "en": "/en/md-work/"
+      }
     },
     {
       "key": "md-corpses",
       "lastmod": "2026-11-23",
       "changefreq": "monthly",
-      "priority": { "ar": "0.9", "en": "0.8" },
-      "alternates": { "ar": "/md-corpses/", "en": "/en/md-corpses/" }
+      "priority": {
+        "ar": "0.9",
+        "en": "0.8"
+      },
+      "alternates": {
+        "ar": "/md-corpses/",
+        "en": "/en/md-corpses/"
+      }
     },
     {
       "key": "pay-guide",
       "lastmod": "2026-11-26",
       "changefreq": "monthly",
-      "priority": { "ar": "0.8", "en": "0.8", "it": "0.8" },
-      "alternates": { "ar": "/guide/", "en": "/en/guide/", "it": "/it/" }
+      "priority": {
+        "ar": "0.8",
+        "en": "0.8",
+        "it": "0.8"
+      },
+      "alternates": {
+        "ar": "/guide/",
+        "en": "/en/guide/",
+        "it": "/it/"
+      }
     },
     {
       "key": "unpaid-hours",
       "lastmod": "2026-11-26",
       "changefreq": "monthly",
-      "priority": { "it": "0.7" },
-      "alternates": { "it": "/it/ore-non-pagate/" }
+      "priority": {
+        "it": "0.7"
+      },
+      "alternates": {
+        "it": "/it/ore-non-pagate/"
+      }
     },
     {
       "key": "work-hours",
       "lastmod": "2026-11-26",
       "changefreq": "monthly",
-      "priority": { "ar": "0.9", "en": "0.8", "it": "0.8" },
+      "priority": {
+        "ar": "0.9",
+        "en": "0.8",
+        "it": "0.8"
+      },
       "alternates": {
         "ar": "/work-hours/",
         "en": "/en/work-hours/",
@@ -53,7 +87,11 @@
       "key": "articles-hub",
       "lastmod": "2026-11-26",
       "changefreq": "weekly",
-      "priority": { "ar": "0.8", "en": "0.7", "it": "0.7" },
+      "priority": {
+        "ar": "0.8",
+        "en": "0.7",
+        "it": "0.7"
+      },
       "alternates": {
         "ar": "/articles/",
         "en": "/en/articles/",
@@ -64,67 +102,114 @@
       "key": "work-hours-tracker",
       "lastmod": "2026-11-26",
       "changefreq": "monthly",
-      "priority": { "en": "0.7" },
-      "alternates": { "en": "/en/work-hours-tracker/" }
+      "priority": {
+        "en": "0.7"
+      },
+      "alternates": {
+        "en": "/en/work-hours-tracker/"
+      }
     },
     {
       "key": "hourly-wage-calculator",
       "lastmod": "2026-11-26",
       "changefreq": "monthly",
-      "priority": { "en": "0.7" },
-      "alternates": { "en": "/en/hourly-wage-calculator/" }
+      "priority": {
+        "en": "0.7"
+      },
+      "alternates": {
+        "en": "/en/hourly-wage-calculator/"
+      }
     },
     {
       "key": "unpaid-wages",
       "lastmod": "2026-11-26",
       "changefreq": "monthly",
-      "priority": { "en": "0.7" },
-      "alternates": { "en": "/en/unpaid-wages/" }
+      "priority": {
+        "en": "0.7"
+      },
+      "alternates": {
+        "en": "/en/unpaid-wages/"
+      }
     },
     {
       "key": "overtime-pay-calculator",
       "lastmod": "2026-11-27",
       "changefreq": "monthly",
-      "priority": { "en": "0.7" },
-      "alternates": { "en": "/en/overtime-pay-calculator/" }
+      "priority": {
+        "en": "0.7"
+      },
+      "alternates": {
+        "en": "/en/overtime-pay-calculator/"
+      }
     },
     {
       "key": "day-rate-vs-hourly-rate",
       "lastmod": "2026-11-27",
       "changefreq": "monthly",
-      "priority": { "en": "0.7" },
-      "alternates": { "en": "/en/day-rate-vs-hourly-rate/" }
+      "priority": {
+        "en": "0.7"
+      },
+      "alternates": {
+        "en": "/en/day-rate-vs-hourly-rate/"
+      }
     },
     {
       "key": "hourly-pay-italian",
       "lastmod": "2026-11-27",
       "changefreq": "monthly",
-      "priority": { "it": "0.7" },
-      "alternates": { "it": "/it/paga-oraria/" }
+      "priority": {
+        "it": "0.7"
+      },
+      "alternates": {
+        "it": "/it/paga-oraria/"
+      }
     },
     {
       "key": "work-time-record",
       "lastmod": "2026-11-26",
       "changefreq": "monthly",
-      "priority": { "en": "0.7" },
-      "alternates": { "en": "/en/work-time-record/" }
+      "priority": {
+        "en": "0.7"
+      },
+      "alternates": {
+        "en": "/en/work-time-record/"
+      }
     },
     {
       "key": "work-hours-calculation",
       "lastmod": "2026-11-27",
       "changefreq": "monthly",
-      "priority": { "ar": "0.7" },
-      "alternates": { "ar": "/hisab-saat-al-amal/" }
+      "priority": {
+        "ar": "0.7"
+      },
+      "alternates": {
+        "ar": "/hisab-saat-al-amal/"
+      }
     },
     {
       "key": "privacy",
       "lastmod": "2026-11-27",
       "changefreq": "yearly",
-      "priority": { "ar": "0.3", "en": "0.3", "it": "0.3" },
+      "priority": {
+        "ar": "0.3",
+        "en": "0.3",
+        "it": "0.3"
+      },
       "alternates": {
         "ar": "/privacy/",
         "en": "/en/privacy/",
         "it": "/it/privacy/"
+      }
+    },
+    {
+      "key": "md-corpses-privacy",
+      "lastmod": "2026-11-27",
+      "changefreq": "yearly",
+      "priority": {
+        "ar": "0.3"
+      },
+      "alternates": {
+        "ar": "/md-corpses/privacy/"
       }
     }
   ]
