@@ -49,13 +49,13 @@ EN_CARD = """<div class="card">
 
 GAMES = {
     "MD Bolt Master": dict(
-        icon="game-bolt.svg", page="/md-boltmaster/", play=PLAY_BOLT,
+        name="MD Bolt Master", icon="game-bolt.svg", page="/md-boltmaster/", play=PLAY_BOLT,
         tag_ar="لغز فرز الصواميل والبراغي", tag_en="The nuts and bolts sort puzzle",
         desc_ar="رتّب كل لون على برغيه: مستويات متدرجة، تحدٍ يومي جديد، ١٤ لغة، واللعبة تعمل بدون إنترنت.",
         desc_en="Sort every colour onto its own bolt: graded levels, a fresh daily challenge, 14 languages and offline play.",
     ),
     "MD Darkflow": dict(
-        icon="game-darkflow.svg", page="/md-darkflow/", play=PLAY_DARK,
+        name="MD Darkflow", icon="game-darkflow.svg", page="/md-darkflow/", play=PLAY_DARK,
         tag_ar="لغز الأسهم على زجاج أسود", tag_en="The neon arrow puzzle",
         desc_ar="اضغط الأسهم لتفرغ اللوحة: ١٠٠ مستوى، تحدٍ يومي مشترك، ثلاثة قلوب وتلميح، ويعمل بدون إنترنت.",
         desc_en="Tap the arrows off the grid: 100 levels, a shared daily board, three hearts and a hint, all offline.",
@@ -84,6 +84,8 @@ def soon_blocks(text):
 
 def patch_home(path, lang):
     p = pathlib.Path(path)
+    if not p.exists():
+        return
     text = p.read_text(encoding="utf-8")
     changed = False
     if "card--soon" in text:
@@ -92,24 +94,9 @@ def patch_home(path, lang):
             if not name:
                 continue
             data = dict(GAMES[name])
-            tpl = AR_CARD if lang == "ar" else EN_CARD
-            if lang == "ar":
-                new = tpl.format(arrow=ARROW, **data)
-            else:
-                new = tpl.format(arrow=ARROW, **{k: v for k, v in data.items() if k in
-                                                 ("icon", "name", "tag_en", "desc_en", "play")})
+            data["arrow"] = ARROW
+            new = (AR_CARD if lang == "ar" else EN_CARD).format(**data)
             text = text[:start] + new + text[end:]
-            changed = True
-    if lang == "ar" and "md-boltmaster/" not in text:
-        anchor = "</div>\n        </div>"
-        extra = ('\n            <div class="hero-actions" style="margin-block-start:22px">\n'
-                 '              <a class="btn btn-outline" href="/md-boltmaster/">صفحة MD Bolt Master</a>\n'
-                 '              <a class="btn btn-outline" href="/md-darkflow/">صفحة MD Darkflow</a>\n'
-                 '            </div>')
-        idx = text.find("panel-games")
-        close = text.find(anchor, idx)
-        if idx > 0 and close > 0:
-            text = text[:close + len("</div>")] + extra + text[close + len("</div>"):]
             changed = True
     if changed:
         p.write_text(text, encoding="utf-8")
@@ -132,7 +119,7 @@ HUB = """
           <a class="card" href="/articles/bolt-master-level-guide/"><h3 class="card-name">دليل مستويات MD Bolt Master</h3><p class="card-desc">ما يتغيّر في كل مرحلة وكيف تستخدم النجوم.</p></a>
           <a class="card" href="/articles/color-sort-puzzle-benefits/"><h3 class="card-name">لماذا ألغاز فرز الألوان مريحة للدماغ</h3><p class="card-desc">قاعدة واحدة وجلسات قصيرة بلا مؤقت.</p></a>
         </div>
-        <p class="section-sub" style="margin-block-start:22px"><a href="/games/">كل الألعاب والأدلة →</a></p>
+        <p class="section-sub" style="margin-block-start:22px"><a href="/games/">كل الألعاب والأدلة ←</a></p>
       </div>
     </section>
 """
