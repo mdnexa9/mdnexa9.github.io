@@ -1,11 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="MD Nexa">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="290 144 510 472" width="510" height="472" role="img" aria-label="MD Nexa">
   <defs>
-    <linearGradient id="lg1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5ee0ff"/><stop offset="1" stop-color="#4c7cf5"/></linearGradient>
-    <linearGradient id="lg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5b86ff"/><stop offset="1" stop-color="#a274ff"/></linearGradient>
-    <linearGradient id="lg3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4aa8f0"/><stop offset="1" stop-color="#7c5bf6"/></linearGradient>
+    <linearGradient id="ml" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4ed5ff"/><stop offset="1" stop-color="#4e78f0"/></linearGradient>
+    <linearGradient id="mr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5c7cf6"/><stop offset="1" stop-color="#9e6df7"/></linearGradient>
+    <linearGradient id="mm" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f7ef2"/><stop offset="1" stop-color="#705ee0"/></linearGradient>
   </defs>
-  <rect width="120" height="120" rx="27" fill="#0a0e1a"/>
-  <rect x="22" y="34" width="21" height="52" rx="10.5" fill="url(#lg1)"/>
-  <rect x="77" y="22" width="21" height="64" rx="10.5" fill="url(#lg2)"/>
-  <g transform="rotate(38 60 56)"><rect x="41" y="35" width="32" height="21" rx="10.5" fill="url(#lg3)"/></g>
+  <rect x="339.5" y="257.5" width="97" height="327" rx="48.5" fill="url(#ml)"/>
+  <rect x="654.5" y="171.5" width="97" height="333" rx="48.5" fill="url(#mr)"/>
+  <g transform="rotate(-35 533 366)"><rect x="484.5" y="250" width="97" height="232" rx="48.5" fill="url(#mm)"/></g>
 </svg>

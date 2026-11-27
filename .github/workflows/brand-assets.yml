@@ -1,0 +1,42 @@
+name: Build brand assets
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/scripts/brand_assets.py"
+      - ".github/workflows/brand-assets.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: brand-assets
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: ${{ !contains(github.event.head_commit.message, '[brand-bot]') }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Pillow
+        run: pip install --quiet pillow
+      - name: Render assets
+        run: python .github/scripts/brand_assets.py
+      - name: Commit
+        run: |
+          set -euo pipefail
+          git config user.name "MD Nexa Bot"
+          git config user.email "mdnexa9@gmail.com"
+          git add assets/logo.png assets/apple-touch-icon.png assets/icon-512.png
+          if git diff --cached --quiet; then
+            echo "No asset changes."
+            exit 0
+          fi
+          git commit -m "Rebuild logo, touch icon and 512 icon from the MD Nexa artwork [brand-bot]"
+          git push
