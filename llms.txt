@@ -6,6 +6,7 @@
 
 - [MD Work](https://mdnexa.online/md-work/): work notebook for Android. Tracks workdays, half-days and days off, earnings, expenses, plus daily and monthly reports, quick note, timer and checklist. Free, no account, records stored on the device. Google Play: https://play.google.com/store/apps/details?id=app.mdwork.notebook
 - [MD Corpses](https://mdnexa.online/md-corpses/): one-finger climbing game. 12 chapters, endless mode, 21 languages including Arabic. Free. Google Play: https://play.google.com/store/apps/details?id=com.mdnexa.corpses
+  Privacy policy: https://privacy-policy-md-corpses-1.vercel.app/
 - MD Bolt Master: colour-sorting puzzle game, in development, not released yet.
 - MD Darkflow: game in development, not released yet.
 
