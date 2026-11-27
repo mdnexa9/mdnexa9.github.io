@@ -14,6 +14,7 @@
 
 - [MD Nexa home](https://mdnexa.online/): the company home page — three pillars (original games, digital platforms and services, new projects), product cards, real Google Play screenshots and contact details.
 - [About the company](https://mdnexa.online/company/): MD Nexa as an independent technology company — positioning, pillars, build principles and every product link. Tagline: "Simplicity is our strength."
+- [Services](https://mdnexa.online/services/): client work — Android apps, web platforms and internal tools, games. Written scope before work starts, weekly delivery, fixed price per stage, source code and publishing accounts owned by the client, no lock-in.
 - [Support](https://mdnexa.online/support/): WhatsApp, email, frequently asked questions and per-product help links; replies within one working day.
 - [MD Work page](https://mdnexa.online/md-work/): what the app does, its features and store screenshots.
 - [MD Corpses page](https://mdnexa.online/md-corpses/): how the game plays, its features and store screenshots.
@@ -23,7 +24,7 @@
 ## Pages (English)
 
 - [MD Nexa, English](https://mdnexa.online/en/): the home page in English, with the same pillars and products.
-- [About the company, English](https://mdnexa.online/en/company/) · [Support, English](https://mdnexa.online/en/support/).
+- [About the company, English](https://mdnexa.online/en/company/) · [Services, English](https://mdnexa.online/en/services/) · [Support, English](https://mdnexa.online/en/support/).
 - [MD Work, English](https://mdnexa.online/en/md-work/): the app in English, with features and store screenshots.
 - [MD Corpses, English](https://mdnexa.online/en/md-corpses/): the game in English, with how it plays and store screenshots.
 - [Privacy policy, English](https://mdnexa.online/en/privacy/): the same policy in English, also published in Italian at https://mdnexa.online/it/privacy/.
