@@ -1,3 +1,4 @@
+# Builds the studio pages from the design system in site_kit.py
 name: Build the studio site
 
 on:
@@ -5,7 +6,7 @@ on:
   push:
     branches: [main]
     paths:
-      - ".github/scripts/site_shared.py"
+      - ".github/scripts/site_kit.py"
       - ".github/scripts/site_pages.py"
       - ".github/scripts/site_home.py"
       - ".github/workflows/site-build.yml"
