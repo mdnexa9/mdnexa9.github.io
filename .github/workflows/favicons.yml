@@ -1,0 +1,32 @@
+name: Favicons
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/scripts/favicons.py"
+      - ".github/workflows/favicons.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  icons:
+    runs-on: ubuntu-latest
+    if: ${{ !contains(github.event.head_commit.message, '[icons-bot]') }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet pillow
+      - run: python .github/scripts/favicons.py
+      - run: |
+          set -euo pipefail
+          git config user.name "MD Nexa Bot"
+          git config user.email "mdnexa9@gmail.com"
+          git add -A
+          if git diff --cached --quiet; then echo "nothing to do"; exit 0; fi
+          git commit -m "Add branded favicons and link them in the shell [icons-bot]"
+          git push
