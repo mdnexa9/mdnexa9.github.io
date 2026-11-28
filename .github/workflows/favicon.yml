@@ -1,0 +1,31 @@
+name: Favicon pass
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/scripts/favicon_patch.py"
+      - ".github/workflows/favicon.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    if: ${{ !contains(github.event.head_commit.message, '[favicon-bot]') }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python .github/scripts/favicon_patch.py
+      - run: |
+          set -euo pipefail
+          git config user.name "MD Nexa Bot"
+          git config user.email "mdnexa9@gmail.com"
+          git add -A
+          if git diff --cached --quiet; then echo "nothing to do"; exit 0; fi
+          git commit -m "Add favicons and wire them into the design system [favicon-bot]"
+          git push
