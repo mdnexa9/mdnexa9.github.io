@@ -109,3 +109,7 @@ def write(path, html):
 def save_css():
     pathlib.Path("assets/site.css").write_text(CSS, encoding="utf-8")
     print("wrote assets/site.css", len(CSS), "bytes")
+
+_ICONS = ('<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">'
+          '<link rel="icon" sizes="192x192" href="/assets/favicon-192.png">')
+SHELL = SHELL.replace('<link rel="stylesheet"', _ICONS + '<link rel="stylesheet"', 1)
