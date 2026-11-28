@@ -1,0 +1,38 @@
+name: Build the studio site
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/scripts/site_shared.py"
+      - ".github/scripts/site_pages.py"
+      - ".github/scripts/site_home.py"
+      - ".github/workflows/site-build.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: site-build
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: ${{ !contains(github.event.head_commit.message, '[build-bot]') }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python .github/scripts/site_home.py
+      - run: python .github/scripts/site_pages.py
+      - run: |
+          set -euo pipefail
+          git config user.name "MD Nexa Bot"
+          git config user.email "mdnexa9@gmail.com"
+          git add -A
+          if git diff --cached --quiet; then echo "nothing to do"; exit 0; fi
+          git commit -m "Rebuild the studio pages from the design system [build-bot]"
+          git push
