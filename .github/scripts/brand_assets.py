@@ -64,8 +64,17 @@ def logo(size):
     return out.resize((size, size), Image.LANCZOS)
 
 
+
+
+def favicons():
+    for size, name in ((32, "favicon-32.png"), (192, "favicon-192.png")):
+        logo(size).save("assets/" + name, optimize=True)
+    from PIL import Image as _I
+    _I.open("assets/favicon-32.png").save("favicon.ico", sizes=[(16, 16), (32, 32), (48, 48)])
+
 if __name__ == "__main__":
     logo(256).save("assets/logo.png", optimize=True)
     tile(180).convert("RGB").save("assets/apple-touch-icon.png", optimize=True)
     tile(512).save("assets/icon-512.png", optimize=True)
+    favicons()
     print("wrote assets/logo.png, assets/apple-touch-icon.png, assets/icon-512.png")

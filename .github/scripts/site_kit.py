@@ -88,7 +88,7 @@ FOOTER = """<footer class="site"><div class="wrap"><div class="cols">
 
 SHELL = ("<!doctype html><html lang=\"{lang}\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">"
          "<title>{title}</title><meta name=\"description\" content=\"{desc}\">"
-         "<link rel=\"canonical\" href=\"{origin}{path}\"><link rel=\"icon\" href=\"/assets/logo.svg\" type=\"image/svg+xml\">"
+         "<link rel=\"canonical\" href=\"{origin}{path}\"><link rel=\"icon\" href=\"/assets/logo.svg\" type=\"image/svg+xml\"><link rel=\"apple-touch-icon\" href=\"/assets/apple-touch-icon.png\"><link rel=\"icon\" sizes=\"192x192\" href=\"/assets/favicon-192.png\">"
          "<meta name=\"theme-color\" content=\"#05060c\"><meta property=\"og:type\" content=\"website\">"
          "<meta property=\"og:title\" content=\"{title}\"><meta property=\"og:description\" content=\"{desc}\">"
          "<meta property=\"og:image\" content=\"{origin}/assets/og-image.jpg\"><meta name=\"twitter:card\" content=\"summary_large_image\">"
