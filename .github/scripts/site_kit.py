@@ -113,3 +113,16 @@ def save_css():
 _ICONS = ('<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">'
           '<link rel="icon" sizes="192x192" href="/assets/favicon-192.png">')
 SHELL = SHELL.replace('<link rel="stylesheet"', _ICONS + '<link rel="stylesheet"', 1)
+
+CSS += "@media(max-width:760px){header.site .bar{flex-wrap:wrap;padding:10px 0;gap:6px}.brand{white-space:nowrap}nav.main{width:100%;margin-left:0;overflow-x:auto;gap:18px;font-size:13.5px;padding:2px 0 6px}nav.main::-webkit-scrollbar{display:none}.hero h1{letter-spacing:-.02em}}"
+_HEADSET = ('<link rel="manifest" href="/site.webmanifest">'
+            '<link rel="icon" href="/favicon.ico" sizes="any">'
+            '<link rel="icon" type="image/png" sizes="32x32" href="/assets/icon-32.png">'
+            '<link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">'
+            '<link rel="icon" type="image/png" sizes="512x512" href="/assets/icon-512.png">'
+            '<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">'
+            '<meta name="apple-mobile-web-app-title" content="MD Nexa">'
+            '<link rel="alternate" hreflang="en" href="https://mdnexa.online/">'
+            '<link rel="alternate" hreflang="ar" href="https://mdnexa.online/ar/">'
+            '<link rel="alternate" hreflang="x-default" href="https://mdnexa.online/">')
+SHELL = SHELL.replace("</head>", _HEADSET + "</head>", 1)
