@@ -1,0 +1,32 @@
+name: Social card
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/scripts/og_fix.py"
+      - ".github/workflows/og-fix.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  card:
+    runs-on: ubuntu-latest
+    if: ${{ !contains(github.event.head_commit.message, '[og-bot]') }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet pillow
+      - run: python .github/scripts/og_fix.py
+      - run: |
+          set -euo pipefail
+          git config user.name "MD Nexa Bot"
+          git config user.email "mdnexa9@gmail.com"
+          git add -A
+          if git diff --cached --quiet; then echo "nothing to do"; exit 0; fi
+          git commit -m "Reframe the 1200x630 social card [og-bot]"
+          git push
